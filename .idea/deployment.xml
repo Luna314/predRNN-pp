@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="ices@10.248.19.227:22 password" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="ices@10.248.19.227:22 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/ices/PycharmProject/LUNA/predrnn_pp" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="ices@10.248.19.43:22 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/ices/PycharmProject/LUNA/predrnn-pp-master" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

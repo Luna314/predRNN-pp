@@ -1,0 +1,4233 @@
+FLAGS.display_interval 10
+begin load data../kth_action
+there are 127271 pictures
+there are 108717 sequences
+begin load data../kth_action
+there are 74833 pictures
+there are 5041 sequences
+Initializing models
+WARNING:tensorflow:From /home/ices/PycharmProject/LUNA/predrnn_pp/layers/CausalLSTMCell.py:53: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.conv2d instead.
+WARNING:tensorflow:From /home/ices/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/ices/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2021-04-16 13:48:02.383521: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-04-16 13:48:07.822002: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55c98da67200 executing computations on platform CUDA. Devices:
+2021-04-16 13:48:07.822096: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-04-16 13:48:07.848141: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2021-04-16 13:48:07.854308: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55c99d4d5130 executing computations on platform Host. Devices:
+2021-04-16 13:48:07.854396: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2021-04-16 13:48:07.855939: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:1a:00.0
+totalMemory: 10.73GiB freeMemory: 10.57GiB
+2021-04-16 13:48:07.855986: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2021-04-16 13:48:07.858091: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-16 13:48:07.858122: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2021-04-16 13:48:07.858141: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2021-04-16 13:48:07.859096: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10284 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:1a:00.0, compute capability: 7.5)
+itr: 10
+training loss: 71573.6640625
+itr: 20
+training loss: 74188.9921875
+itr: 30
+training loss: 86282.5
+itr: 40
+training loss: 57622.4140625
+itr: 50
+training loss: 113188.734375
+itr: 60
+training loss: 75046.75
+itr: 70
+training loss: 75389.2734375
+itr: 80
+training loss: 65518.78125
+itr: 90
+training loss: 74741.015625
+itr: 100
+training loss: 38650.2734375
+itr: 110
+training loss: 34615.42578125
+itr: 120
+training loss: 37453.578125
+itr: 130
+training loss: 32510.564453125
+itr: 140
+training loss: 58010.828125
+itr: 150
+training loss: 20132.859375
+itr: 160
+training loss: 60774.8125
+itr: 170
+training loss: 60397.78125
+itr: 180
+training loss: 44938.1640625
+itr: 190
+training loss: 28650.828125
+itr: 200
+training loss: 56211.25
+itr: 210
+training loss: 34078.5703125
+itr: 220
+training loss: 112504.6015625
+itr: 230
+training loss: 130396.8046875
+itr: 240
+training loss: 23940.05078125
+itr: 250
+training loss: 14577.4287109375
+itr: 260
+training loss: 51703.0234375
+itr: 270
+training loss: 115920.03125
+itr: 280
+training loss: 36185.9375
+itr: 290
+training loss: 60161.609375
+itr: 300
+training loss: 53521.3671875
+itr: 310
+training loss: 108162.890625
+itr: 320
+training loss: 37715.1328125
+itr: 330
+training loss: 81788.953125
+itr: 340
+training loss: 63922.9765625
+itr: 350
+training loss: 47147.96484375
+itr: 360
+training loss: 31047.6171875
+itr: 370
+training loss: 18193.55859375
+itr: 380
+training loss: 31102.328125
+itr: 390
+training loss: 26618.12109375
+itr: 400
+training loss: 22697.99609375
+itr: 410
+training loss: 82467.109375
+itr: 420
+training loss: 54437.796875
+itr: 430
+training loss: 108157.390625
+itr: 440
+training loss: 33235.3359375
+itr: 450
+training loss: 25995.93359375
+itr: 460
+training loss: 109127.1796875
+itr: 470
+training loss: 78015.7265625
+itr: 480
+training loss: 48504.46875
+itr: 490
+training loss: 65964.90625
+itr: 500
+training loss: 73858.046875
+itr: 510
+training loss: 93925.5859375
+itr: 520
+training loss: 36226.75
+itr: 530
+training loss: 57058.09765625
+itr: 540
+training loss: 64416.546875
+itr: 550
+training loss: 26384.552734375
+itr: 560
+training loss: 58942.421875
+itr: 570
+training loss: 94376.25
+itr: 580
+training loss: 34371.99609375
+itr: 590
+training loss: 61710.75
+itr: 600
+training loss: 43818.8515625
+itr: 610
+training loss: 26540.671875
+itr: 620
+training loss: 38958.90625
+itr: 630
+training loss: 26834.375
+itr: 640
+training loss: 116725.75
+itr: 650
+training loss: 29760.25390625
+itr: 660
+training loss: 66372.859375
+itr: 670
+training loss: 63215.4609375
+itr: 680
+training loss: 73855.859375
+itr: 690
+training loss: 73112.4921875
+itr: 700
+training loss: 62794.15625
+itr: 710
+training loss: 61525.47265625
+itr: 720
+training loss: 41123.4609375
+itr: 730
+training loss: 71511.09375
+itr: 740
+training loss: 59183.34765625
+itr: 750
+training loss: 30942.638671875
+itr: 760
+training loss: 35722.4375
+itr: 770
+training loss: 126103.0546875
+itr: 780
+training loss: 63828.9609375
+itr: 790
+training loss: 121942.9375
+itr: 800
+training loss: 59461.59375
+itr: 810
+training loss: 54583.13671875
+itr: 820
+training loss: 59316.32421875
+itr: 830
+training loss: 131686.125
+itr: 840
+training loss: 83000.46875
+itr: 850
+training loss: 29264.83984375
+itr: 860
+training loss: 36053.015625
+itr: 870
+training loss: 55711.44921875
+itr: 880
+training loss: 33979.8515625
+itr: 890
+training loss: 63217.265625
+itr: 900
+training loss: 80455.5078125
+itr: 910
+training loss: 26537.181640625
+itr: 920
+training loss: 86200.2578125
+itr: 930
+training loss: 67760.2890625
+itr: 940
+training loss: 85779.234375
+itr: 950
+training loss: 66643.484375
+itr: 960
+training loss: 76986.9765625
+itr: 970
+training loss: 77883.0390625
+itr: 980
+training loss: 127494.046875
+itr: 990
+training loss: 32275.833984375
+itr: 1000
+training loss: 65314.86328125
+itr: 1010
+training loss: 36373.8828125
+itr: 1020
+training loss: 25666.693359375
+itr: 1030
+training loss: 96103.703125
+itr: 1040
+training loss: 48718.7109375
+itr: 1050
+training loss: 19319.845703125
+itr: 1060
+training loss: 57998.0859375
+itr: 1070
+training loss: 21113.140625
+itr: 1080
+training loss: 24811.2734375
+itr: 1090
+training loss: 92990.84375
+itr: 1100
+training loss: 24342.6953125
+itr: 1110
+training loss: 20181.705078125
+itr: 1120
+training loss: 30782.25390625
+itr: 1130
+training loss: 34300.4375
+itr: 1140
+training loss: 96747.0625
+itr: 1150
+training loss: 88026.46875
+itr: 1160
+training loss: 62182.41015625
+itr: 1170
+training loss: 104043.171875
+itr: 1180
+training loss: 79549.015625
+itr: 1190
+training loss: 77340.7578125
+itr: 1200
+training loss: 32422.5
+itr: 1210
+training loss: 46574.296875
+itr: 1220
+training loss: 60872.13671875
+itr: 1230
+training loss: 20495.486328125
+itr: 1240
+training loss: 42486.62109375
+itr: 1250
+training loss: 19542.109375
+itr: 1260
+training loss: 25191.94921875
+itr: 1270
+training loss: 21189.771484375
+itr: 1280
+training loss: 70680.25
+itr: 1290
+training loss: 83602.0703125
+itr: 1300
+training loss: 58295.2734375
+itr: 1310
+training loss: 49790.13671875
+itr: 1320
+training loss: 34129.1484375
+itr: 1330
+training loss: 37020.4296875
+itr: 1340
+training loss: 55513.5078125
+itr: 1350
+training loss: 70351.03125
+itr: 1360
+training loss: 84889.515625
+itr: 1370
+training loss: 57346.52734375
+itr: 1380
+training loss: 76927.7578125
+itr: 1390
+training loss: 97317.265625
+itr: 1400
+training loss: 55043.8359375
+itr: 1410
+training loss: 23612.890625
+itr: 1420
+training loss: 60268.1640625
+itr: 1430
+training loss: 22363.310546875
+itr: 1440
+training loss: 28583.91015625
+itr: 1450
+training loss: 81284.40625
+itr: 1460
+training loss: 48893.09375
+itr: 1470
+training loss: 43824.2890625
+itr: 1480
+training loss: 33589.36328125
+itr: 1490
+training loss: 60899.140625
+itr: 1500
+training loss: 68626.390625
+itr: 1510
+training loss: 60990.1484375
+itr: 1520
+training loss: 62601.078125
+itr: 1530
+training loss: 69308.9609375
+itr: 1540
+training loss: 64782.2734375
+itr: 1550
+training loss: 29745.67578125
+itr: 1560
+training loss: 51762.57421875
+itr: 1570
+training loss: 15795.7421875
+itr: 1580
+training loss: 51948.6328125
+itr: 1590
+training loss: 98659.953125
+itr: 1600
+training loss: 100616.578125
+itr: 1610
+training loss: 34220.921875
+itr: 1620
+training loss: 73379.296875
+itr: 1630
+training loss: 51471.30078125
+itr: 1640
+training loss: 93647.328125
+itr: 1650
+training loss: 38380.8984375
+itr: 1660
+training loss: 40087.578125
+itr: 1670
+training loss: 74091.2421875
+itr: 1680
+training loss: 84562.6953125
+itr: 1690
+training loss: 132957.15625
+itr: 1700
+training loss: 17853.33984375
+itr: 1710
+training loss: 24650.08984375
+itr: 1720
+training loss: 79478.1875
+itr: 1730
+training loss: 17803.3359375
+itr: 1740
+training loss: 91438.15625
+itr: 1750
+training loss: 115841.4921875
+itr: 1760
+training loss: 64365.69921875
+itr: 1770
+training loss: 70605.8515625
+itr: 1780
+training loss: 17454.96875
+itr: 1790
+training loss: 79106.90625
+itr: 1800
+training loss: 26591.1875
+itr: 1810
+training loss: 116696.546875
+itr: 1820
+training loss: 24385.34765625
+itr: 1830
+training loss: 27446.265625
+itr: 1840
+training loss: 44118.3125
+itr: 1850
+training loss: 17046.439453125
+itr: 1860
+training loss: 32268.64453125
+itr: 1870
+training loss: 21716.45703125
+itr: 1880
+training loss: 50080.15625
+itr: 1890
+training loss: 83665.15625
+itr: 1900
+training loss: 66227.8125
+itr: 1910
+training loss: 26881.580078125
+itr: 1920
+training loss: 31416.37890625
+itr: 1930
+training loss: 42905.8125
+itr: 1940
+training loss: 77807.8828125
+itr: 1950
+training loss: 34526.0703125
+itr: 1960
+training loss: 64059.92578125
+itr: 1970
+training loss: 54912.0078125
+itr: 1980
+training loss: 65274.13671875
+itr: 1990
+training loss: 61370.34375
+itr: 2000
+training loss: 60706.8828125
+test...
+mse per seq: 4725.687406060052
+473.58053707546657
+473.4881864774795
+473.24564012194435
+473.0628865166316
+472.8874705284361
+472.7219333103725
+472.4067393802461
+472.1869615948389
+471.5602426029387
+470.5468084516979
+psnr per frame: 16.870382
+16.856468
+16.861502
+16.860533
+16.8651
+16.865719
+16.865168
+16.868631
+16.872894
+16.88245
+16.905365
+fmae per frame: 2050.2883
+2053.2
+2053.018
+2052.4382
+2051.9402
+2051.3984
+2050.8135
+2049.8206
+2048.9482
+2047.0952
+2044.2115
+ssim per frame: 0.6183974
+0.6158539
+0.61608166
+0.6168871
+0.6174262
+0.61795247
+0.61832273
+0.619088
+0.6198018
+0.62076366
+0.6217967
+sharpness per frame: 115.11438
+110.41369
+110.10456
+108.28472
+110.42123
+112.018654
+113.70119
+116.40714
+118.96349
+124.04762
+126.78155
+itr: 2010
+training loss: 15322.978515625
+itr: 2020
+training loss: 38684.66796875
+itr: 2030
+training loss: 100117.859375
+itr: 2040
+training loss: 74352.0703125
+itr: 2050
+training loss: 68862.203125
+itr: 2060
+training loss: 119891.7890625
+itr: 2070
+training loss: 44342.7265625
+itr: 2080
+training loss: 18932.505859375
+itr: 2090
+training loss: 48383.64453125
+itr: 2100
+training loss: 84815.34375
+itr: 2110
+training loss: 72342.28125
+itr: 2120
+training loss: 69330.453125
+itr: 2130
+training loss: 84149.8984375
+itr: 2140
+training loss: 37328.1015625
+itr: 2150
+training loss: 72764.234375
+itr: 2160
+training loss: 67935.0078125
+itr: 2170
+training loss: 94138.828125
+itr: 2180
+training loss: 79655.484375
+itr: 2190
+training loss: 31098.98046875
+itr: 2200
+training loss: 92005.34375
+itr: 2210
+training loss: 28824.125
+itr: 2220
+training loss: 39557.640625
+itr: 2230
+training loss: 40883.26953125
+itr: 2240
+training loss: 92575.515625
+itr: 2250
+training loss: 37604.0078125
+itr: 2260
+training loss: 61339.38671875
+itr: 2270
+training loss: 28769.169921875
+itr: 2280
+training loss: 72070.671875
+itr: 2290
+training loss: 21969.86328125
+itr: 2300
+training loss: 25235.998046875
+itr: 2310
+training loss: 41808.8125
+itr: 2320
+training loss: 55094.9453125
+itr: 2330
+training loss: 17153.810546875
+itr: 2340
+training loss: 70199.703125
+itr: 2350
+training loss: 40618.609375
+itr: 2360
+training loss: 65498.6484375
+itr: 2370
+training loss: 28398.537109375
+itr: 2380
+training loss: 17568.41796875
+itr: 2390
+training loss: 33247.921875
+itr: 2400
+training loss: 71991.0234375
+itr: 2410
+training loss: 137201.875
+itr: 2420
+training loss: 51993.31640625
+itr: 2430
+training loss: 106598.6796875
+itr: 2440
+training loss: 76139.46875
+itr: 2450
+training loss: 60552.96875
+itr: 2460
+training loss: 41169.296875
+itr: 2470
+training loss: 64482.39453125
+itr: 2480
+training loss: 19423.25390625
+itr: 2490
+training loss: 24453.67578125
+itr: 2500
+training loss: 81428.8359375
+itr: 2510
+training loss: 93119.5078125
+itr: 2520
+training loss: 66358.9296875
+itr: 2530
+training loss: 42942.4140625
+itr: 2540
+training loss: 26424.4140625
+itr: 2550
+training loss: 38861.6640625
+itr: 2560
+training loss: 62513.046875
+itr: 2570
+training loss: 42494.23828125
+itr: 2580
+training loss: 84155.109375
+itr: 2590
+training loss: 58351.875
+itr: 2600
+training loss: 62543.30859375
+itr: 2610
+training loss: 94208.828125
+itr: 2620
+training loss: 71491.6171875
+itr: 2630
+training loss: 55681.359375
+itr: 2640
+training loss: 13761.708984375
+itr: 2650
+training loss: 28162.28515625
+itr: 2660
+training loss: 74993.859375
+itr: 2670
+training loss: 71252.546875
+itr: 2680
+training loss: 21930.31640625
+itr: 2690
+training loss: 32244.51953125
+itr: 2700
+training loss: 82276.8359375
+itr: 2710
+training loss: 97483.9375
+itr: 2720
+training loss: 24483.642578125
+itr: 2730
+training loss: 55360.92578125
+itr: 2740
+training loss: 54937.453125
+itr: 2750
+training loss: 111303.375
+itr: 2760
+training loss: 17169.0234375
+itr: 2770
+training loss: 73954.34375
+itr: 2780
+training loss: 28643.13671875
+itr: 2790
+training loss: 74915.1328125
+itr: 2800
+training loss: 33339.1484375
+itr: 2810
+training loss: 55014.0
+itr: 2820
+training loss: 41531.0703125
+itr: 2830
+training loss: 62521.3984375
+itr: 2840
+training loss: 133950.21875
+itr: 2850
+training loss: 29424.18359375
+itr: 2860
+training loss: 33608.6015625
+itr: 2870
+training loss: 57262.328125
+itr: 2880
+training loss: 12313.869140625
+itr: 2890
+training loss: 83920.328125
+itr: 2900
+training loss: 33714.7265625
+itr: 2910
+training loss: 42914.265625
+itr: 2920
+training loss: 64364.6484375
+itr: 2930
+training loss: 64295.3515625
+itr: 2940
+training loss: 105909.0
+itr: 2950
+training loss: 44838.87890625
+itr: 2960
+training loss: 43364.12109375
+itr: 2970
+training loss: 35388.28125
+itr: 2980
+training loss: 78218.3359375
+itr: 2990
+training loss: 73092.171875
+itr: 3000
+training loss: 71836.40625
+itr: 3010
+training loss: 44334.921875
+itr: 3020
+training loss: 31136.73828125
+itr: 3030
+training loss: 25922.8515625
+itr: 3040
+training loss: 79129.9375
+itr: 3050
+training loss: 22771.51953125
+itr: 3060
+training loss: 130588.53125
+itr: 3070
+training loss: 53686.52734375
+itr: 3080
+training loss: 88272.78125
+itr: 3090
+training loss: 37580.7109375
+itr: 3100
+training loss: 36031.9296875
+itr: 3110
+training loss: 22507.677734375
+itr: 3120
+training loss: 120360.09375
+itr: 3130
+training loss: 63021.21875
+itr: 3140
+training loss: 96110.859375
+itr: 3150
+training loss: 33071.34375
+itr: 3160
+training loss: 50312.5859375
+itr: 3170
+training loss: 82149.140625
+itr: 3180
+training loss: 98125.890625
+itr: 3190
+training loss: 28044.80078125
+itr: 3200
+training loss: 58209.84375
+itr: 3210
+training loss: 53681.8046875
+itr: 3220
+training loss: 20983.72265625
+itr: 3230
+training loss: 24753.95703125
+itr: 3240
+training loss: 91353.671875
+itr: 3250
+training loss: 55641.609375
+itr: 3260
+training loss: 22009.134765625
+itr: 3270
+training loss: 61321.7890625
+itr: 3280
+training loss: 75340.109375
+itr: 3290
+training loss: 16181.74609375
+itr: 3300
+training loss: 19133.75
+itr: 3310
+training loss: 69922.53125
+itr: 3320
+training loss: 69758.234375
+itr: 3330
+training loss: 55825.3046875
+itr: 3340
+training loss: 54019.0078125
+itr: 3350
+training loss: 81295.5234375
+itr: 3360
+training loss: 14175.8759765625
+itr: 3370
+training loss: 94832.546875
+itr: 3380
+training loss: 28093.83203125
+itr: 3390
+training loss: 23911.640625
+itr: 3400
+training loss: 82545.1015625
+itr: 3410
+training loss: 38587.8515625
+itr: 3420
+training loss: 39691.1875
+itr: 3430
+training loss: 27459.796875
+itr: 3440
+training loss: 91771.9765625
+itr: 3450
+training loss: 19590.65234375
+itr: 3460
+training loss: 84334.328125
+itr: 3470
+training loss: 24888.05859375
+itr: 3480
+training loss: 26311.59765625
+itr: 3490
+training loss: 21837.49609375
+itr: 3500
+training loss: 39632.34765625
+itr: 3510
+training loss: 51497.1796875
+itr: 3520
+training loss: 28629.34765625
+itr: 3530
+training loss: 56163.9609375
+itr: 3540
+training loss: 65433.3203125
+itr: 3550
+training loss: 76655.1796875
+itr: 3560
+training loss: 22638.015625
+itr: 3570
+training loss: 57359.234375
+itr: 3580
+training loss: 17427.12109375
+itr: 3590
+training loss: 69526.078125
+itr: 3600
+training loss: 14336.75
+itr: 3610
+training loss: 30293.5234375
+itr: 3620
+training loss: 31752.037109375
+itr: 3630
+training loss: 36500.7421875
+itr: 3640
+training loss: 71461.2265625
+itr: 3650
+training loss: 32936.7109375
+itr: 3660
+training loss: 77263.6875
+itr: 3670
+training loss: 54481.125
+itr: 3680
+training loss: 38749.484375
+itr: 3690
+training loss: 21499.32421875
+itr: 3700
+training loss: 77091.5
+itr: 3710
+training loss: 74526.7421875
+itr: 3720
+training loss: 43921.4765625
+itr: 3730
+training loss: 71248.890625
+itr: 3740
+training loss: 76622.3125
+itr: 3750
+training loss: 107442.25
+itr: 3760
+training loss: 76046.453125
+itr: 3770
+training loss: 57021.41796875
+itr: 3780
+training loss: 25454.140625
+itr: 3790
+training loss: 38590.703125
+itr: 3800
+training loss: 55472.7734375
+itr: 3810
+training loss: 27972.1171875
+itr: 3820
+training loss: 67101.953125
+itr: 3830
+training loss: 62545.3203125
+itr: 3840
+training loss: 21821.0
+itr: 3850
+training loss: 67827.140625
+itr: 3860
+training loss: 16134.4033203125
+itr: 3870
+training loss: 47454.546875
+itr: 3880
+training loss: 23011.48828125
+itr: 3890
+training loss: 25283.04296875
+itr: 3900
+training loss: 19418.484375
+itr: 3910
+training loss: 58206.29296875
+itr: 3920
+training loss: 97468.640625
+itr: 3930
+training loss: 77152.734375
+itr: 3940
+training loss: 68411.78125
+itr: 3950
+training loss: 94645.953125
+itr: 3960
+training loss: 20259.58984375
+itr: 3970
+training loss: 16071.375
+itr: 3980
+training loss: 53086.265625
+itr: 3990
+training loss: 64940.7109375
+itr: 4000
+training loss: 31362.78125
+test...
+mse per seq: 5823.961320952763
+291.8225628201924
+390.38501034993976
+477.048424669296
+543.0458775898767
+594.7711844126384
+637.6710170624748
+676.8644289834159
+711.4567895556253
+740.14144821167
+760.7545772976346
+psnr per frame: 15.277458
+18.75419
+16.966988
+15.951559
+15.329236
+14.897813
+14.575243
+14.325252
+14.129892
+13.976962
+13.867446
+fmae per frame: 2409.6985
+1697.5701
+2004.3284
+2225.562
+2368.046
+2469.7734
+2550.5017
+2618.3052
+2677.2302
+2725.5466
+2760.1216
+ssim per frame: 0.38105655
+0.46199307
+0.4386716
+0.4179281
+0.39779836
+0.37898916
+0.36408952
+0.35060966
+0.3399321
+0.33245388
+0.32809997
+sharpness per frame: 254.35098
+254.3986
+253.66588
+253.66885
+253.70813
+253.8359
+254.41469
+254.89543
+254.95178
+254.98135
+254.98909
+itr: 4010
+training loss: 16920.0
+itr: 4020
+training loss: 41737.265625
+itr: 4030
+training loss: 16070.81640625
+itr: 4040
+training loss: 56378.8046875
+itr: 4050
+training loss: 31119.06640625
+itr: 4060
+training loss: 35969.6484375
+itr: 4070
+training loss: 93314.3359375
+itr: 4080
+training loss: 90252.328125
+itr: 4090
+training loss: 15235.212890625
+itr: 4100
+training loss: 33672.625
+itr: 4110
+training loss: 32217.740234375
+itr: 4120
+training loss: 19106.09765625
+itr: 4130
+training loss: 70025.90625
+itr: 4140
+training loss: 13065.8486328125
+itr: 4150
+training loss: 71436.6953125
+itr: 4160
+training loss: 50882.171875
+itr: 4170
+training loss: 13404.9921875
+itr: 4180
+training loss: 36017.6953125
+itr: 4190
+training loss: 87587.6171875
+itr: 4200
+training loss: 51350.484375
+itr: 4210
+training loss: 69796.40625
+itr: 4220
+training loss: 78637.3203125
+itr: 4230
+training loss: 29756.1015625
+itr: 4240
+training loss: 52401.703125
+itr: 4250
+training loss: 12254.849609375
+itr: 4260
+training loss: 21085.46484375
+itr: 4270
+training loss: 54883.37109375
+itr: 4280
+training loss: 90774.8125
+itr: 4290
+training loss: 110985.109375
+itr: 4300
+training loss: 43055.4765625
+itr: 4310
+training loss: 13015.625
+itr: 4320
+training loss: 56029.96875
+itr: 4330
+training loss: 56457.578125
+itr: 4340
+training loss: 16065.2646484375
+itr: 4350
+training loss: 57270.1640625
+itr: 4360
+training loss: 63899.7578125
+itr: 4370
+training loss: 22575.1328125
+itr: 4380
+training loss: 28204.431640625
+itr: 4390
+training loss: 64458.1796875
+itr: 4400
+training loss: 62390.48046875
+itr: 4410
+training loss: 15035.212890625
+itr: 4420
+training loss: 50949.65625
+itr: 4430
+training loss: 24808.908203125
+itr: 4440
+training loss: 21278.51171875
+itr: 4450
+training loss: 65406.52734375
+itr: 4460
+training loss: 56113.609375
+itr: 4470
+training loss: 60564.96875
+itr: 4480
+training loss: 54576.96875
+itr: 4490
+training loss: 55042.77734375
+itr: 4500
+training loss: 19310.369140625
+itr: 4510
+training loss: 117062.4765625
+itr: 4520
+training loss: 14673.6123046875
+itr: 4530
+training loss: 69401.609375
+itr: 4540
+training loss: 70841.4375
+itr: 4550
+training loss: 69915.5078125
+itr: 4560
+training loss: 62429.1953125
+itr: 4570
+training loss: 21237.2890625
+itr: 4580
+training loss: 41778.828125
+itr: 4590
+training loss: 11495.966796875
+itr: 4600
+training loss: 49468.04296875
+itr: 4610
+training loss: 50963.03515625
+itr: 4620
+training loss: 48026.0703125
+itr: 4630
+training loss: 14242.6328125
+itr: 4640
+training loss: 16080.7841796875
+itr: 4650
+training loss: 92765.78125
+itr: 4660
+training loss: 65216.6875
+itr: 4670
+training loss: 22925.35546875
+itr: 4680
+training loss: 43650.859375
+itr: 4690
+training loss: 32942.328125
+itr: 4700
+training loss: 47881.640625
+itr: 4710
+training loss: 51113.78125
+itr: 4720
+training loss: 40783.5546875
+itr: 4730
+training loss: 69135.0390625
+itr: 4740
+training loss: 93993.0234375
+itr: 4750
+training loss: 75856.4609375
+itr: 4760
+training loss: 66699.671875
+itr: 4770
+training loss: 18604.345703125
+itr: 4780
+training loss: 110743.359375
+itr: 4790
+training loss: 53134.70703125
+itr: 4800
+training loss: 65917.3125
+itr: 4810
+training loss: 14579.2880859375
+itr: 4820
+training loss: 28477.3984375
+itr: 4830
+training loss: 49711.8671875
+itr: 4840
+training loss: 24637.087890625
+itr: 4850
+training loss: 79986.59375
+itr: 4860
+training loss: 61498.4765625
+itr: 4870
+training loss: 50447.6015625
+itr: 4880
+training loss: 19171.421875
+itr: 4890
+training loss: 52722.46875
+itr: 4900
+training loss: 21081.716796875
+itr: 4910
+training loss: 28142.55859375
+itr: 4920
+training loss: 19269.169921875
+itr: 4930
+training loss: 16287.2158203125
+itr: 4940
+training loss: 93715.6015625
+itr: 4950
+training loss: 19392.310546875
+itr: 4960
+training loss: 67720.3359375
+itr: 4970
+training loss: 70383.796875
+itr: 4980
+training loss: 13478.75390625
+itr: 4990
+training loss: 122413.34375
+itr: 5000
+training loss: 19859.7421875
+saved to checkpoints/kth_predrnn_pp
+itr: 5010
+training loss: 62340.0390625
+itr: 5020
+training loss: 73187.140625
+itr: 5030
+training loss: 75965.96875
+itr: 5040
+training loss: 57015.12109375
+itr: 5050
+training loss: 53997.87109375
+itr: 5060
+training loss: 39454.96875
+itr: 5070
+training loss: 58094.1796875
+itr: 5080
+training loss: 26942.208984375
+itr: 5090
+training loss: 80236.953125
+itr: 5100
+training loss: 20001.91796875
+itr: 5110
+training loss: 58995.1953125
+itr: 5120
+training loss: 65547.8828125
+itr: 5130
+training loss: 49337.0703125
+itr: 5140
+training loss: 53658.19921875
+itr: 5150
+training loss: 59878.8515625
+itr: 5160
+training loss: 71780.640625
+itr: 5170
+training loss: 20029.80859375
+itr: 5180
+training loss: 62153.421875
+itr: 5190
+training loss: 11169.0
+itr: 5200
+training loss: 41932.6171875
+itr: 5210
+training loss: 13908.873046875
+itr: 5220
+training loss: 64544.1875
+itr: 5230
+training loss: 52081.1015625
+itr: 5240
+training loss: 59440.078125
+itr: 5250
+training loss: 60547.859375
+itr: 5260
+training loss: 34854.86328125
+itr: 5270
+training loss: 18788.734375
+itr: 5280
+training loss: 72573.0
+itr: 5290
+training loss: 18954.3828125
+itr: 5300
+training loss: 42577.2109375
+itr: 5310
+training loss: 14945.25
+itr: 5320
+training loss: 58903.9140625
+itr: 5330
+training loss: 46033.05078125
+itr: 5340
+training loss: 57926.91015625
+itr: 5350
+training loss: 34679.546875
+itr: 5360
+training loss: 13030.6328125
+itr: 5370
+training loss: 55067.609375
+itr: 5380
+training loss: 51920.5390625
+itr: 5390
+training loss: 56874.55078125
+itr: 5400
+training loss: 80517.1484375
+itr: 5410
+training loss: 20409.125
+itr: 5420
+training loss: 60086.08984375
+itr: 5430
+training loss: 60213.140625
+itr: 5440
+training loss: 23509.20703125
+itr: 5450
+training loss: 21966.220703125
+itr: 5460
+training loss: 18042.0078125
+itr: 5470
+training loss: 18836.53515625
+itr: 5480
+training loss: 48410.3984375
+itr: 5490
+training loss: 45397.6796875
+itr: 5500
+training loss: 68668.515625
+itr: 5510
+training loss: 19285.837890625
+itr: 5520
+training loss: 12981.79296875
+itr: 5530
+training loss: 62467.703125
+itr: 5540
+training loss: 17711.5625
+itr: 5550
+training loss: 28512.2109375
+itr: 5560
+training loss: 41162.9765625
+itr: 5570
+training loss: 20766.193359375
+itr: 5580
+training loss: 43471.7734375
+itr: 5590
+training loss: 69452.453125
+itr: 5600
+training loss: 74641.109375
+itr: 5610
+training loss: 35316.44140625
+itr: 5620
+training loss: 13480.76953125
+itr: 5630
+training loss: 57107.28125
+itr: 5640
+training loss: 17907.96484375
+itr: 5650
+training loss: 15157.314453125
+itr: 5660
+training loss: 99247.734375
+itr: 5670
+training loss: 29548.146484375
+itr: 5680
+training loss: 54693.078125
+itr: 5690
+training loss: 59508.3671875
+itr: 5700
+training loss: 95882.578125
+itr: 5710
+training loss: 44930.171875
+itr: 5720
+training loss: 57618.55078125
+itr: 5730
+training loss: 34830.5625
+itr: 5740
+training loss: 49442.9765625
+itr: 5750
+training loss: 17289.81640625
+itr: 5760
+training loss: 97066.296875
+itr: 5770
+training loss: 52399.625
+itr: 5780
+training loss: 81103.953125
+itr: 5790
+training loss: 45226.21875
+itr: 5800
+training loss: 65363.203125
+itr: 5810
+training loss: 36489.546875
+itr: 5820
+training loss: 57667.703125
+itr: 5830
+training loss: 26597.44140625
+itr: 5840
+training loss: 69200.375
+itr: 5850
+training loss: 49118.5859375
+itr: 5860
+training loss: 40746.953125
+itr: 5870
+training loss: 17994.51953125
+itr: 5880
+training loss: 88983.25
+itr: 5890
+training loss: 58630.65625
+itr: 5900
+training loss: 24238.8984375
+itr: 5910
+training loss: 21787.453125
+itr: 5920
+training loss: 58072.1953125
+itr: 5930
+training loss: 29925.9765625
+itr: 5940
+training loss: 18380.814453125
+itr: 5950
+training loss: 18765.294921875
+itr: 5960
+training loss: 71070.1328125
+itr: 5970
+training loss: 76513.84375
+itr: 5980
+training loss: 62741.484375
+itr: 5990
+training loss: 32140.58203125
+itr: 6000
+training loss: 29446.6875
+test...
+mse per seq: 8165.341152339512
+407.15531862349735
+578.4105300116161
+689.4999902634394
+775.4808048732697
+843.2910522097633
+896.5442001463875
+940.0288779304141
+977.861297213842
+1012.323465510777
+1044.745615556505
+psnr per frame: 14.387273
+17.84517
+15.963919
+15.059295
+14.46701
+14.041588
+13.725246
+13.477514
+13.27171
+13.09151
+12.92976
+fmae per frame: 2786.8347
+1913.7524
+2332.6475
+2562.0024
+2726.7817
+2853.4705
+2952.6565
+3033.5823
+3103.2676
+3166.0588
+3224.128
+ssim per frame: 0.17777386
+0.24861266
+0.21051556
+0.19233468
+0.18064234
+0.17200087
+0.16509008
+0.15936509
+0.15429354
+0.14961536
+0.14526841
+sharpness per frame: 254.23181
+247.31924
+254.99881
+255.0
+255.0
+255.0
+255.0
+255.0
+255.0
+255.0
+255.0
+itr: 6010
+training loss: 53196.0703125
+itr: 6020
+training loss: 14392.0341796875
+itr: 6030
+training loss: 58233.1953125
+itr: 6040
+training loss: 82264.484375
+itr: 6050
+training loss: 57497.3828125
+itr: 6060
+training loss: 54877.78125
+itr: 6070
+training loss: 62870.3203125
+itr: 6080
+training loss: 18707.08984375
+itr: 6090
+training loss: 55926.6484375
+itr: 6100
+training loss: 13309.8046875
+itr: 6110
+training loss: 16929.80859375
+itr: 6120
+training loss: 33374.7421875
+itr: 6130
+training loss: 31570.041015625
+itr: 6140
+training loss: 23416.34765625
+itr: 6150
+training loss: 34785.28125
+itr: 6160
+training loss: 17170.29296875
+itr: 6170
+training loss: 32369.193359375
+itr: 6180
+training loss: 88857.921875
+itr: 6190
+training loss: 40249.65625
+itr: 6200
+training loss: 39372.54296875
+itr: 6210
+training loss: 17849.390625
+itr: 6220
+training loss: 67358.703125
+itr: 6230
+training loss: 35174.69140625
+itr: 6240
+training loss: 48397.77734375
+itr: 6250
+training loss: 15852.7109375
+itr: 6260
+training loss: 100012.078125
+itr: 6270
+training loss: 36693.65625
+itr: 6280
+training loss: 48223.546875
+itr: 6290
+training loss: 51659.73828125
+itr: 6300
+training loss: 17825.19140625
+itr: 6310
+training loss: 34755.3359375
+itr: 6320
+training loss: 11441.1982421875
+itr: 6330
+training loss: 62678.0703125
+itr: 6340
+training loss: 24737.90625
+itr: 6350
+training loss: 54539.953125
+itr: 6360
+training loss: 19371.48046875
+itr: 6370
+training loss: 78203.5625
+itr: 6380
+training loss: 12189.42578125
+itr: 6390
+training loss: 48682.1328125
+itr: 6400
+training loss: 50951.0234375
+itr: 6410
+training loss: 49528.2265625
+itr: 6420
+training loss: 18838.015625
+itr: 6430
+training loss: 23242.11328125
+itr: 6440
+training loss: 37394.8515625
+itr: 6450
+training loss: 56106.0078125
+itr: 6460
+training loss: 14178.865234375
+itr: 6470
+training loss: 23350.28125
+itr: 6480
+training loss: 57155.7109375
+itr: 6490
+training loss: 43179.33203125
+itr: 6500
+training loss: 20372.560546875
+itr: 6510
+training loss: 32129.611328125
+itr: 6520
+training loss: 36146.75
+itr: 6530
+training loss: 46994.4296875
+itr: 6540
+training loss: 23184.078125
+itr: 6550
+training loss: 58597.734375
+itr: 6560
+training loss: 55429.3515625
+itr: 6570
+training loss: 21306.8515625
+itr: 6580
+training loss: 39594.7421875
+itr: 6590
+training loss: 61005.34375
+itr: 6600
+training loss: 21039.75
+itr: 6610
+training loss: 36755.1171875
+itr: 6620
+training loss: 51057.25
+itr: 6630
+training loss: 55846.85546875
+itr: 6640
+training loss: 13881.0224609375
+itr: 6650
+training loss: 23487.515625
+itr: 6660
+training loss: 37747.515625
+itr: 6670
+training loss: 48396.03125
+itr: 6680
+training loss: 14900.451171875
+itr: 6690
+training loss: 19372.41796875
+itr: 6700
+training loss: 21696.4140625
+itr: 6710
+training loss: 24989.986328125
+itr: 6720
+training loss: 88044.765625
+itr: 6730
+training loss: 65037.1328125
+itr: 6740
+training loss: 28067.94140625
+itr: 6750
+training loss: 25059.19921875
+itr: 6760
+training loss: 54999.3828125
+itr: 6770
+training loss: 20590.65625
+itr: 6780
+training loss: 20631.36328125
+itr: 6790
+training loss: 13335.5126953125
+itr: 6800
+training loss: 26524.19921875
+itr: 6810
+training loss: 54540.3125
+itr: 6820
+training loss: 32993.140625
+itr: 6830
+training loss: 19029.6171875
+itr: 6840
+training loss: 21694.36328125
+itr: 6850
+training loss: 14122.822265625
+itr: 6860
+training loss: 15926.517578125
+itr: 6870
+training loss: 13736.6943359375
+itr: 6880
+training loss: 48588.96875
+itr: 6890
+training loss: 77190.9140625
+itr: 6900
+training loss: 20025.17578125
+itr: 6910
+training loss: 31634.564453125
+itr: 6920
+training loss: 28864.61328125
+itr: 6930
+training loss: 16158.6611328125
+itr: 6940
+training loss: 14913.12890625
+itr: 6950
+training loss: 17830.837890625
+itr: 6960
+training loss: 16314.279296875
+itr: 6970
+training loss: 10826.92578125
+itr: 6980
+training loss: 65575.3125
+itr: 6990
+training loss: 18886.0
+itr: 7000
+training loss: 35465.9453125
+itr: 7010
+training loss: 32818.9296875
+itr: 7020
+training loss: 24803.2109375
+itr: 7030
+training loss: 17502.107421875
+itr: 7040
+training loss: 66510.453125
+itr: 7050
+training loss: 59122.5
+itr: 7060
+training loss: 28265.51171875
+itr: 7070
+training loss: 37716.6015625
+itr: 7080
+training loss: 99142.609375
+itr: 7090
+training loss: 66475.9375
+itr: 7100
+training loss: 61864.44921875
+itr: 7110
+training loss: 65675.1640625
+itr: 7120
+training loss: 57305.11328125
+itr: 7130
+training loss: 62252.9375
+itr: 7140
+training loss: 20269.412109375
+itr: 7150
+training loss: 23554.609375
+itr: 7160
+training loss: 50703.09375
+itr: 7170
+training loss: 37145.3984375
+itr: 7180
+training loss: 23644.611328125
+itr: 7190
+training loss: 24458.28125
+itr: 7200
+training loss: 12496.8828125
+itr: 7210
+training loss: 18992.2109375
+itr: 7220
+training loss: 32364.140625
+itr: 7230
+training loss: 79690.15625
+itr: 7240
+training loss: 32678.279296875
+itr: 7250
+training loss: 86256.859375
+itr: 7260
+training loss: 24191.419921875
+itr: 7270
+training loss: 25073.599609375
+itr: 7280
+training loss: 15626.11328125
+itr: 7290
+training loss: 17774.9140625
+itr: 7300
+training loss: 62140.4140625
+itr: 7310
+training loss: 21763.568359375
+itr: 7320
+training loss: 42709.3828125
+itr: 7330
+training loss: 49517.3828125
+itr: 7340
+training loss: 21569.396484375
+itr: 7350
+training loss: 94220.5390625
+itr: 7360
+training loss: 77619.28125
+itr: 7370
+training loss: 50113.34375
+itr: 7380
+training loss: 73414.734375
+itr: 7390
+training loss: 29766.01171875
+itr: 7400
+training loss: 15915.109375
+itr: 7410
+training loss: 28817.8515625
+itr: 7420
+training loss: 72968.6015625
+itr: 7430
+training loss: 50212.4375
+itr: 7440
+training loss: 50976.484375
+itr: 7450
+training loss: 19244.470703125
+itr: 7460
+training loss: 51541.2578125
+itr: 7470
+training loss: 42788.72265625
+itr: 7480
+training loss: 21446.57421875
+itr: 7490
+training loss: 19711.873046875
+itr: 7500
+training loss: 80882.75
+itr: 7510
+training loss: 21270.71484375
+itr: 7520
+training loss: 14527.8564453125
+itr: 7530
+training loss: 29264.484375
+itr: 7540
+training loss: 17602.705078125
+itr: 7550
+training loss: 48920.25390625
+itr: 7560
+training loss: 42136.921875
+itr: 7570
+training loss: 72187.3125
+itr: 7580
+training loss: 13031.724609375
+itr: 7590
+training loss: 15659.623046875
+itr: 7600
+training loss: 24832.88671875
+itr: 7610
+training loss: 72236.9375
+itr: 7620
+training loss: 53307.0859375
+itr: 7630
+training loss: 24729.76953125
+itr: 7640
+training loss: 23252.8515625
+itr: 7650
+training loss: 15866.92578125
+itr: 7660
+training loss: 65785.3671875
+itr: 7670
+training loss: 31842.34375
+itr: 7680
+training loss: 66870.828125
+itr: 7690
+training loss: 31202.91015625
+itr: 7700
+training loss: 14795.173828125
+itr: 7710
+training loss: 18090.73828125
+itr: 7720
+training loss: 49425.359375
+itr: 7730
+training loss: 18593.828125
+itr: 7740
+training loss: 57455.765625
+itr: 7750
+training loss: 24188.4140625
+itr: 7760
+training loss: 103727.84375
+itr: 7770
+training loss: 41423.48046875
+itr: 7780
+training loss: 21209.7109375
+itr: 7790
+training loss: 17020.32421875
+itr: 7800
+training loss: 17909.1875
+itr: 7810
+training loss: 16835.173828125
+itr: 7820
+training loss: 32871.17578125
+itr: 7830
+training loss: 20958.466796875
+itr: 7840
+training loss: 13363.1962890625
+itr: 7850
+training loss: 21110.23046875
+itr: 7860
+training loss: 53756.97265625
+itr: 7870
+training loss: 84423.03125
+itr: 7880
+training loss: 38895.51171875
+itr: 7890
+training loss: 25107.9296875
+itr: 7900
+training loss: 50650.2734375
+itr: 7910
+training loss: 14111.189453125
+itr: 7920
+training loss: 28796.94921875
+itr: 7930
+training loss: 12060.4140625
+itr: 7940
+training loss: 11537.802734375
+itr: 7950
+training loss: 22505.23046875
+itr: 7960
+training loss: 12259.3828125
+itr: 7970
+training loss: 15632.15625
+itr: 7980
+training loss: 17507.193359375
+itr: 7990
+training loss: 17089.9140625
+itr: 8000
+training loss: 48211.25
+test...
+mse per seq: 3392.3678801521423
+194.22389526594253
+270.3895974726904
+298.0216544938466
+330.9598102236551
+356.5086544475858
+371.1581664781722
+382.1594567026411
+390.4991753774976
+396.74780534411235
+401.6996643459986
+psnr per frame: 18.862034
+22.183367
+20.764444
+19.704515
+18.873528
+18.36124
+18.058882
+17.856955
+17.710222
+17.597378
+17.50981
+fmae per frame: 1625.6292
+1161.2893
+1362.0284
+1482.6338
+1604.6141
+1690.0764
+1738.9915
+1772.2913
+1796.7556
+1815.7817
+1831.829
+ssim per frame: 0.5308876
+0.6371546
+0.60227025
+0.5668158
+0.53816676
+0.51904124
+0.5048243
+0.49452776
+0.48699182
+0.48157504
+0.47750875
+sharpness per frame: 147.68388
+125.337105
+125.43274
+132.85596
+140.41489
+146.22937
+151.48909
+156.42838
+161.30754
+166.26031
+171.08353
+itr: 8010
+training loss: 25546.458984375
+itr: 8020
+training loss: 12441.4296875
+itr: 8030
+training loss: 18473.37890625
+itr: 8040
+training loss: 21426.13671875
+itr: 8050
+training loss: 16189.0224609375
+itr: 8060
+training loss: 12958.185546875
+itr: 8070
+training loss: 11683.775390625
+itr: 8080
+training loss: 57135.6796875
+itr: 8090
+training loss: 55538.421875
+itr: 8100
+training loss: 68435.6328125
+itr: 8110
+training loss: 54783.48828125
+itr: 8120
+training loss: 10141.58203125
+itr: 8130
+training loss: 12029.2021484375
+itr: 8140
+training loss: 16765.759765625
+itr: 8150
+training loss: 13502.923828125
+itr: 8160
+training loss: 62765.37890625
+itr: 8170
+training loss: 18302.87890625
+itr: 8180
+training loss: 23099.61328125
+itr: 8190
+training loss: 48017.80078125
+itr: 8200
+training loss: 35956.80078125
+itr: 8210
+training loss: 48683.64453125
+itr: 8220
+training loss: 80933.125
+itr: 8230
+training loss: 18076.19921875
+itr: 8240
+training loss: 37648.8515625
+itr: 8250
+training loss: 32863.3671875
+itr: 8260
+training loss: 11298.5283203125
+itr: 8270
+training loss: 28823.84375
+itr: 8280
+training loss: 34161.9609375
+itr: 8290
+training loss: 15247.6513671875
+itr: 8300
+training loss: 21528.1484375
+itr: 8310
+training loss: 48772.859375
+itr: 8320
+training loss: 14559.130859375
+itr: 8330
+training loss: 14589.6328125
+itr: 8340
+training loss: 21971.212890625
+itr: 8350
+training loss: 18066.96484375
+itr: 8360
+training loss: 31429.27734375
+itr: 8370
+training loss: 15962.2314453125
+itr: 8380
+training loss: 27256.310546875
+itr: 8390
+training loss: 35953.03125
+itr: 8400
+training loss: 18240.953125
+itr: 8410
+training loss: 72550.7734375
+itr: 8420
+training loss: 62820.203125
+itr: 8430
+training loss: 16078.537109375
+itr: 8440
+training loss: 25344.453125
+itr: 8450
+training loss: 30568.453125
+itr: 8460
+training loss: 9785.7763671875
+itr: 8470
+training loss: 9351.560546875
+itr: 8480
+training loss: 16179.259765625
+itr: 8490
+training loss: 20598.130859375
+itr: 8500
+training loss: 16562.177734375
+itr: 8510
+training loss: 12253.6435546875
+itr: 8520
+training loss: 25006.314453125
+itr: 8530
+training loss: 14145.3095703125
+itr: 8540
+training loss: 25304.484375
+itr: 8550
+training loss: 14382.466796875
+itr: 8560
+training loss: 59163.4609375
+itr: 8570
+training loss: 22003.09765625
+itr: 8580
+training loss: 26935.140625
+itr: 8590
+training loss: 17862.55078125
+itr: 8600
+training loss: 59371.3125
+itr: 8610
+training loss: 13619.8359375
+itr: 8620
+training loss: 17682.23046875
+itr: 8630
+training loss: 44703.37109375
+itr: 8640
+training loss: 31548.482421875
+itr: 8650
+training loss: 25202.6640625
+itr: 8660
+training loss: 47531.609375
+itr: 8670
+training loss: 18005.2734375
+itr: 8680
+training loss: 24766.134765625
+itr: 8690
+training loss: 14239.5537109375
+itr: 8700
+training loss: 20765.123046875
+itr: 8710
+training loss: 27695.90625
+itr: 8720
+training loss: 18578.734375
+itr: 8730
+training loss: 15806.12890625
+itr: 8740
+training loss: 39538.5
+itr: 8750
+training loss: 64079.93359375
+itr: 8760
+training loss: 29175.3125
+itr: 8770
+training loss: 23621.9609375
+itr: 8780
+training loss: 45781.9609375
+itr: 8790
+training loss: 28567.083984375
+itr: 8800
+training loss: 15231.6826171875
+itr: 8810
+training loss: 71619.828125
+itr: 8820
+training loss: 32427.41015625
+itr: 8830
+training loss: 17227.05859375
+itr: 8840
+training loss: 26805.75390625
+itr: 8850
+training loss: 14904.2314453125
+itr: 8860
+training loss: 40975.4375
+itr: 8870
+training loss: 30000.359375
+itr: 8880
+training loss: 40667.8984375
+itr: 8890
+training loss: 11178.1796875
+itr: 8900
+training loss: 15557.2275390625
+itr: 8910
+training loss: 14603.95703125
+itr: 8920
+training loss: 13124.349609375
+itr: 8930
+training loss: 10224.583984375
+itr: 8940
+training loss: 12896.0966796875
+itr: 8950
+training loss: 15498.140625
+itr: 8960
+training loss: 13186.48046875
+itr: 8970
+training loss: 23811.2421875
+itr: 8980
+training loss: 12337.4921875
+itr: 8990
+training loss: 10314.861328125
+itr: 9000
+training loss: 10532.36328125
+itr: 9010
+training loss: 12860.564453125
+itr: 9020
+training loss: 11093.525390625
+itr: 9030
+training loss: 16697.15625
+itr: 9040
+training loss: 15823.91015625
+itr: 9050
+training loss: 7710.033203125
+itr: 9060
+training loss: 10588.349609375
+itr: 9070
+training loss: 14719.560546875
+itr: 9080
+training loss: 11087.53125
+itr: 9090
+training loss: 10927.3447265625
+itr: 9100
+training loss: 9882.1552734375
+itr: 9110
+training loss: 10814.978515625
+itr: 9120
+training loss: 14751.0390625
+itr: 9130
+training loss: 14153.06640625
+itr: 9140
+training loss: 8443.82421875
+itr: 9150
+training loss: 12453.802734375
+itr: 9160
+training loss: 11261.259765625
+itr: 9170
+training loss: 7807.8388671875
+itr: 9180
+training loss: 23788.283203125
+itr: 9190
+training loss: 22903.345703125
+itr: 9200
+training loss: 30827.048828125
+itr: 9210
+training loss: 13136.2734375
+itr: 9220
+training loss: 15244.3447265625
+itr: 9230
+training loss: 14245.4765625
+itr: 9240
+training loss: 10876.5078125
+itr: 9250
+training loss: 12565.66796875
+itr: 9260
+training loss: 12846.1201171875
+itr: 9270
+training loss: 9069.435546875
+itr: 9280
+training loss: 9409.162109375
+itr: 9290
+training loss: 9435.275390625
+itr: 9300
+training loss: 9609.419921875
+itr: 9310
+training loss: 7916.474609375
+itr: 9320
+training loss: 13367.337890625
+itr: 9330
+training loss: 13327.01171875
+itr: 9340
+training loss: 14082.775390625
+itr: 9350
+training loss: 11819.283203125
+itr: 9360
+training loss: 8043.4619140625
+itr: 9370
+training loss: 9874.185546875
+itr: 9380
+training loss: 11582.544921875
+itr: 9390
+training loss: 10698.7880859375
+itr: 9400
+training loss: 11966.5546875
+itr: 9410
+training loss: 10003.1689453125
+itr: 9420
+training loss: 7063.5556640625
+itr: 9430
+training loss: 7970.45361328125
+itr: 9440
+training loss: 18640.4375
+itr: 9450
+training loss: 10709.638671875
+itr: 9460
+training loss: 15682.205078125
+itr: 9470
+training loss: 17321.087890625
+itr: 9480
+training loss: 38359.3828125
+itr: 9490
+training loss: 19400.10546875
+itr: 9500
+training loss: 49349.2421875
+itr: 9510
+training loss: 19472.798828125
+itr: 9520
+training loss: 23259.9375
+itr: 9530
+training loss: 12246.4375
+itr: 9540
+training loss: 11516.3984375
+itr: 9550
+training loss: 14441.7666015625
+itr: 9560
+training loss: 9588.828125
+itr: 9570
+training loss: 12001.708984375
+itr: 9580
+training loss: 11671.986328125
+itr: 9590
+training loss: 9834.8955078125
+itr: 9600
+training loss: 9196.8544921875
+itr: 9610
+training loss: 15459.416015625
+itr: 9620
+training loss: 13322.572265625
+itr: 9630
+training loss: 8338.984375
+itr: 9640
+training loss: 12148.80859375
+itr: 9650
+training loss: 12215.865234375
+itr: 9660
+training loss: 12213.599609375
+itr: 9670
+training loss: 15719.9033203125
+itr: 9680
+training loss: 10581.494140625
+itr: 9690
+training loss: 18066.103515625
+itr: 9700
+training loss: 12861.646484375
+itr: 9710
+training loss: 8879.4736328125
+itr: 9720
+training loss: 11301.5458984375
+itr: 9730
+training loss: 8462.314453125
+itr: 9740
+training loss: 14476.8798828125
+itr: 9750
+training loss: 15057.046875
+itr: 9760
+training loss: 9772.4375
+itr: 9770
+training loss: 12242.982421875
+itr: 9780
+training loss: 11805.6689453125
+itr: 9790
+training loss: 7784.0302734375
+itr: 9800
+training loss: 12941.64453125
+itr: 9810
+training loss: 20494.23828125
+itr: 9820
+training loss: 9822.41796875
+itr: 9830
+training loss: 11475.515625
+itr: 9840
+training loss: 9515.44921875
+itr: 9850
+training loss: 8960.0322265625
+itr: 9860
+training loss: 9569.2236328125
+itr: 9870
+training loss: 9969.255859375
+itr: 9880
+training loss: 7365.2421875
+itr: 9890
+training loss: 14630.19921875
+itr: 9900
+training loss: 14357.673828125
+itr: 9910
+training loss: 12348.2509765625
+itr: 9920
+training loss: 9722.4228515625
+itr: 9930
+training loss: 10834.1171875
+itr: 9940
+training loss: 13115.76171875
+itr: 9950
+training loss: 13312.537109375
+itr: 9960
+training loss: 22558.841796875
+itr: 9970
+training loss: 28478.705078125
+itr: 9980
+training loss: 14386.55859375
+itr: 9990
+training loss: 8930.0400390625
+itr: 10000
+training loss: 11550.9638671875
+test...
+mse per seq: 1665.7484735329947
+56.523278961484394
+87.32014897740076
+118.89156813545833
+146.8785603969816
+170.4517284037575
+190.36035581316267
+206.7553120529841
+220.08259849926782
+230.451202825516
+238.03371946698144
+psnr per frame: 21.39657
+25.606424
+23.61912
+22.30739
+21.44157
+20.854723
+20.446152
+20.160782
+19.961388
+19.825525
+19.742607
+fmae per frame: 1020.0916
+596.6769
+744.72784
+871.52075
+970.5392
+1048.4943
+1111.1348
+1161.4534
+1202.1753
+1234.5852
+1259.608
+ssim per frame: 0.620763
+0.70807403
+0.6714918
+0.6448223
+0.6252884
+0.61123747
+0.60047793
+0.59280837
+0.5874233
+0.5840347
+0.5819712
+sharpness per frame: 117.19572
+119.97222
+118.49147
+118.10912
+117.79682
+117.12639
+116.6
+116.17461
+115.88571
+115.79822
+116.00258
+saved to checkpoints/kth_predrnn_pp
+itr: 10010
+training loss: 7819.55712890625
+itr: 10020
+training loss: 14410.513671875
+itr: 10030
+training loss: 10609.2861328125
+itr: 10040
+training loss: 7672.0693359375
+itr: 10050
+training loss: 9174.923828125
+itr: 10060
+training loss: 10739.3076171875
+itr: 10070
+training loss: 9558.650390625
+itr: 10080
+training loss: 11837.1376953125
+itr: 10090
+training loss: 12159.845703125
+itr: 10100
+training loss: 9054.6787109375
+itr: 10110
+training loss: 9271.57421875
+itr: 10120
+training loss: 13030.09765625
+itr: 10130
+training loss: 13898.3671875
+itr: 10140
+training loss: 15528.36328125
+itr: 10150
+training loss: 12288.126953125
+itr: 10160
+training loss: 9044.6884765625
+itr: 10170
+training loss: 11297.640625
+itr: 10180
+training loss: 7487.625
+itr: 10190
+training loss: 9507.318359375
+itr: 10200
+training loss: 9139.703125
+itr: 10210
+training loss: 8941.4599609375
+itr: 10220
+training loss: 11260.4228515625
+itr: 10230
+training loss: 15852.828125
+itr: 10240
+training loss: 7845.6630859375
+itr: 10250
+training loss: 13602.43359375
+itr: 10260
+training loss: 13684.2900390625
+itr: 10270
+training loss: 9610.18359375
+itr: 10280
+training loss: 7480.748046875
+itr: 10290
+training loss: 10707.705078125
+itr: 10300
+training loss: 10774.650390625
+itr: 10310
+training loss: 9759.4169921875
+itr: 10320
+training loss: 8515.125
+itr: 10330
+training loss: 10204.025390625
+itr: 10340
+training loss: 8857.6826171875
+itr: 10350
+training loss: 7746.3896484375
+itr: 10360
+training loss: 13280.5009765625
+itr: 10370
+training loss: 8027.9365234375
+itr: 10380
+training loss: 9232.91015625
+itr: 10390
+training loss: 8997.646484375
+itr: 10400
+training loss: 9773.4775390625
+itr: 10410
+training loss: 11991.06640625
+itr: 10420
+training loss: 28412.701171875
+itr: 10430
+training loss: 12694.900390625
+itr: 10440
+training loss: 10839.591796875
+itr: 10450
+training loss: 9434.716796875
+itr: 10460
+training loss: 12171.927734375
+itr: 10470
+training loss: 14020.84765625
+itr: 10480
+training loss: 10230.806640625
+itr: 10490
+training loss: 14096.2880859375
+itr: 10500
+training loss: 15946.2001953125
+itr: 10510
+training loss: 10697.2138671875
+itr: 10520
+training loss: 18897.798828125
+itr: 10530
+training loss: 10216.875
+itr: 10540
+training loss: 9121.318359375
+itr: 10550
+training loss: 5303.28955078125
+itr: 10560
+training loss: 11692.63671875
+itr: 10570
+training loss: 7882.3076171875
+itr: 10580
+training loss: 9616.171875
+itr: 10590
+training loss: 9493.419921875
+itr: 10600
+training loss: 14605.494140625
+itr: 10610
+training loss: 12410.4169921875
+itr: 10620
+training loss: 7666.7919921875
+itr: 10630
+training loss: 7640.021484375
+itr: 10640
+training loss: 9672.263671875
+itr: 10650
+training loss: 10060.96875
+itr: 10660
+training loss: 12244.953125
+itr: 10670
+training loss: 16102.025390625
+itr: 10680
+training loss: 12699.529296875
+itr: 10690
+training loss: 8789.2470703125
+itr: 10700
+training loss: 22833.20703125
+itr: 10710
+training loss: 10399.775390625
+itr: 10720
+training loss: 7311.8291015625
+itr: 10730
+training loss: 6818.8671875
+itr: 10740
+training loss: 10983.1904296875
+itr: 10750
+training loss: 8272.41015625
+itr: 10760
+training loss: 67894.2109375
+itr: 10770
+training loss: 8946.814453125
+itr: 10780
+training loss: 11151.2421875
+itr: 10790
+training loss: 15533.181640625
+itr: 10800
+training loss: 8848.07421875
+itr: 10810
+training loss: 7824.79541015625
+itr: 10820
+training loss: 13967.783203125
+itr: 10830
+training loss: 13904.24609375
+itr: 10840
+training loss: 11682.544921875
+itr: 10850
+training loss: 9248.486328125
+itr: 10860
+training loss: 11608.365234375
+itr: 10870
+training loss: 21556.06640625
+itr: 10880
+training loss: 12765.97265625
+itr: 10890
+training loss: 8039.9775390625
+itr: 10900
+training loss: 21542.63671875
+itr: 10910
+training loss: 13556.1337890625
+itr: 10920
+training loss: 13223.99609375
+itr: 10930
+training loss: 15886.4111328125
+itr: 10940
+training loss: 22938.0703125
+itr: 10950
+training loss: 18862.06640625
+itr: 10960
+training loss: 21723.12890625
+itr: 10970
+training loss: 69056.5859375
+itr: 10980
+training loss: 102350.015625
+itr: 10990
+training loss: 35266.8671875
+itr: 11000
+training loss: 32862.1640625
+itr: 11010
+training loss: 21546.95703125
+itr: 11020
+training loss: 22360.27734375
+itr: 11030
+training loss: 10145.259765625
+itr: 11040
+training loss: 15596.1953125
+itr: 11050
+training loss: 24401.78515625
+itr: 11060
+training loss: 21794.484375
+itr: 11070
+training loss: 22100.830078125
+itr: 11080
+training loss: 24305.2421875
+itr: 11090
+training loss: 32377.82421875
+itr: 11100
+training loss: 65461.14453125
+itr: 11110
+training loss: 50390.890625
+itr: 11120
+training loss: 11959.248046875
+itr: 11130
+training loss: 39095.0078125
+itr: 11140
+training loss: 66328.3203125
+itr: 11150
+training loss: 47665.3203125
+itr: 11160
+training loss: 26794.609375
+itr: 11170
+training loss: 13031.201171875
+itr: 11180
+training loss: 18729.203125
+itr: 11190
+training loss: 17058.419921875
+itr: 11200
+training loss: 16695.671875
+itr: 11210
+training loss: 10212.900390625
+itr: 11220
+training loss: 11077.3359375
+itr: 11230
+training loss: 12368.716796875
+itr: 11240
+training loss: 17460.064453125
+itr: 11250
+training loss: 11025.953125
+itr: 11260
+training loss: 11619.578125
+itr: 11270
+training loss: 14495.0693359375
+itr: 11280
+training loss: 7931.16943359375
+itr: 11290
+training loss: 11221.181640625
+itr: 11300
+training loss: 15359.00390625
+itr: 11310
+training loss: 9833.06640625
+itr: 11320
+training loss: 10112.0693359375
+itr: 11330
+training loss: 9794.4970703125
+itr: 11340
+training loss: 9919.353515625
+itr: 11350
+training loss: 10651.5625
+itr: 11360
+training loss: 10278.4814453125
+itr: 11370
+training loss: 14755.361328125
+itr: 11380
+training loss: 6944.01611328125
+itr: 11390
+training loss: 21130.671875
+itr: 11400
+training loss: 9545.5361328125
+itr: 11410
+training loss: 8144.91259765625
+itr: 11420
+training loss: 7422.4326171875
+itr: 11430
+training loss: 9555.595703125
+itr: 11440
+training loss: 16383.6630859375
+itr: 11450
+training loss: 12372.7958984375
+itr: 11460
+training loss: 11869.556640625
+itr: 11470
+training loss: 14614.197265625
+itr: 11480
+training loss: 9465.0546875
+itr: 11490
+training loss: 18499.0859375
+itr: 11500
+training loss: 9057.765625
+itr: 11510
+training loss: 12675.603515625
+itr: 11520
+training loss: 10239.1796875
+itr: 11530
+training loss: 7789.4931640625
+itr: 11540
+training loss: 8147.705078125
+itr: 11550
+training loss: 15169.751953125
+itr: 11560
+training loss: 11277.8896484375
+itr: 11570
+training loss: 8564.611328125
+itr: 11580
+training loss: 8357.9921875
+itr: 11590
+training loss: 10992.876953125
+itr: 11600
+training loss: 11883.470703125
+itr: 11610
+training loss: 10453.17578125
+itr: 11620
+training loss: 11032.390625
+itr: 11630
+training loss: 13611.8603515625
+itr: 11640
+training loss: 7934.11962890625
+itr: 11650
+training loss: 6838.82568359375
+itr: 11660
+training loss: 8440.958984375
+itr: 11670
+training loss: 12743.8427734375
+itr: 11680
+training loss: 13625.8017578125
+itr: 11690
+training loss: 11309.970703125
+itr: 11700
+training loss: 9993.9228515625
+itr: 11710
+training loss: 17387.626953125
+itr: 11720
+training loss: 11416.03515625
+itr: 11730
+training loss: 12197.2021484375
+itr: 11740
+training loss: 10513.4873046875
+itr: 11750
+training loss: 9678.56640625
+itr: 11760
+training loss: 10286.2109375
+itr: 11770
+training loss: 9170.6162109375
+itr: 11780
+training loss: 10516.994140625
+itr: 11790
+training loss: 16281.046875
+itr: 11800
+training loss: 13347.4599609375
+itr: 11810
+training loss: 10824.2265625
+itr: 11820
+training loss: 8615.732421875
+itr: 11830
+training loss: 7950.9755859375
+itr: 11840
+training loss: 8642.7197265625
+itr: 11850
+training loss: 7070.9228515625
+itr: 11860
+training loss: 8363.419921875
+itr: 11870
+training loss: 11497.0234375
+itr: 11880
+training loss: 13477.7509765625
+itr: 11890
+training loss: 13808.62890625
+itr: 11900
+training loss: 10011.125
+itr: 11910
+training loss: 8574.1552734375
+itr: 11920
+training loss: 10859.65625
+itr: 11930
+training loss: 9564.1728515625
+itr: 11940
+training loss: 7905.31689453125
+itr: 11950
+training loss: 8068.478515625
+itr: 11960
+training loss: 7603.396484375
+itr: 11970
+training loss: 20003.3984375
+itr: 11980
+training loss: 8301.7333984375
+itr: 11990
+training loss: 10173.8701171875
+itr: 12000
+training loss: 9263.76171875
+test...
+mse per seq: 1974.4080008571111
+50.12824131004394
+98.54471966652643
+147.42834171567645
+186.38407979238602
+215.18265369808864
+235.75534622555688
+249.49008003719268
+258.58056493486674
+264.5379037160722
+268.376069760701
+psnr per frame: 20.561398
+25.808992
+23.025055
+21.36871
+20.385586
+19.780012
+19.393137
+19.149887
+18.99115
+18.886702
+18.82476
+fmae per frame: 1224.7761
+631.30286
+914.467
+1114.9412
+1238.9667
+1316.5408
+1366.0061
+1395.6556
+1413.6982
+1424.6581
+1431.5259
+ssim per frame: 0.6637434
+0.7495523
+0.7121188
+0.6854808
+0.66611654
+0.6520301
+0.6421355
+0.63625723
+0.6328327
+0.6310064
+0.6299033
+sharpness per frame: 108.23323
+106.67897
+105.64326
+106.34087
+107.739685
+108.82917
+109.20774
+109.25357
+109.213295
+109.475395
+109.950195
+itr: 12010
+training loss: 25794.78515625
+itr: 12020
+training loss: 9245.0751953125
+itr: 12030
+training loss: 15182.724609375
+itr: 12040
+training loss: 12014.8203125
+itr: 12050
+training loss: 15196.158203125
+itr: 12060
+training loss: 9974.26953125
+itr: 12070
+training loss: 14381.24609375
+itr: 12080
+training loss: 7739.87109375
+itr: 12090
+training loss: 12058.58203125
+itr: 12100
+training loss: 11519.501953125
+itr: 12110
+training loss: 9184.857421875
+itr: 12120
+training loss: 10352.845703125
+itr: 12130
+training loss: 14629.5185546875
+itr: 12140
+training loss: 10875.2802734375
+itr: 12150
+training loss: 11894.1201171875
+itr: 12160
+training loss: 8895.447265625
+itr: 12170
+training loss: 8217.3125
+itr: 12180
+training loss: 6496.8388671875
+itr: 12190
+training loss: 11712.4765625
+itr: 12200
+training loss: 6505.5302734375
+itr: 12210
+training loss: 7148.755859375
+itr: 12220
+training loss: 9668.01953125
+itr: 12230
+training loss: 8393.6025390625
+itr: 12240
+training loss: 8306.87890625
+itr: 12250
+training loss: 8663.30859375
+itr: 12260
+training loss: 6825.7490234375
+itr: 12270
+training loss: 10114.9013671875
+itr: 12280
+training loss: 11150.328125
+itr: 12290
+training loss: 9793.2822265625
+itr: 12300
+training loss: 9000.408203125
+itr: 12310
+training loss: 15072.4912109375
+itr: 12320
+training loss: 14922.4697265625
+itr: 12330
+training loss: 11874.974609375
+itr: 12340
+training loss: 11995.576171875
+itr: 12350
+training loss: 8187.373046875
+itr: 12360
+training loss: 9432.048828125
+itr: 12370
+training loss: 21025.00390625
+itr: 12380
+training loss: 10403.2353515625
+itr: 12390
+training loss: 8608.986328125
+itr: 12400
+training loss: 14113.30859375
+itr: 12410
+training loss: 8213.0615234375
+itr: 12420
+training loss: 9349.427734375
+itr: 12430
+training loss: 7286.33642578125
+itr: 12440
+training loss: 15199.96875
+itr: 12450
+training loss: 11035.919921875
+itr: 12460
+training loss: 11182.302734375
+itr: 12470
+training loss: 12292.955078125
+itr: 12480
+training loss: 10693.232421875
+itr: 12490
+training loss: 12428.4140625
+itr: 12500
+training loss: 9034.9619140625
+itr: 12510
+training loss: 10604.48828125
+itr: 12520
+training loss: 11392.888671875
+itr: 12530
+training loss: 11540.896484375
+itr: 12540
+training loss: 16958.00390625
+itr: 12550
+training loss: 10722.361328125
+itr: 12560
+training loss: 8463.916015625
+itr: 12570
+training loss: 8353.8349609375
+itr: 12580
+training loss: 8491.416015625
+itr: 12590
+training loss: 12900.6875
+itr: 12600
+training loss: 14323.40234375
+itr: 12610
+training loss: 8977.025390625
+itr: 12620
+training loss: 10422.6865234375
+itr: 12630
+training loss: 9014.71484375
+itr: 12640
+training loss: 7197.3408203125
+itr: 12650
+training loss: 8141.7255859375
+itr: 12660
+training loss: 9935.3125
+itr: 12670
+training loss: 9351.0400390625
+itr: 12680
+training loss: 7833.04833984375
+itr: 12690
+training loss: 11493.283203125
+itr: 12700
+training loss: 7995.634765625
+itr: 12710
+training loss: 11234.26171875
+itr: 12720
+training loss: 8730.0517578125
+itr: 12730
+training loss: 8526.19921875
+itr: 12740
+training loss: 8090.4072265625
+itr: 12750
+training loss: 6747.875
+itr: 12760
+training loss: 9717.41015625
+itr: 12770
+training loss: 9881.5546875
+itr: 12780
+training loss: 9604.6025390625
+itr: 12790
+training loss: 9108.1201171875
+itr: 12800
+training loss: 10155.42578125
+itr: 12810
+training loss: 8510.2119140625
+itr: 12820
+training loss: 6433.6416015625
+itr: 12830
+training loss: 6471.3916015625
+itr: 12840
+training loss: 7969.6298828125
+itr: 12850
+training loss: 10049.8798828125
+itr: 12860
+training loss: 9028.638671875
+itr: 12870
+training loss: 7085.54052734375
+itr: 12880
+training loss: 7197.1806640625
+itr: 12890
+training loss: 8264.58203125
+itr: 12900
+training loss: 7424.603515625
+itr: 12910
+training loss: 8340.6904296875
+itr: 12920
+training loss: 10337.5693359375
+itr: 12930
+training loss: 10948.798828125
+itr: 12940
+training loss: 16309.8505859375
+itr: 12950
+training loss: 11435.8525390625
+itr: 12960
+training loss: 8940.6484375
+itr: 12970
+training loss: 8610.248046875
+itr: 12980
+training loss: 7622.197265625
+itr: 12990
+training loss: 9217.1533203125
+itr: 13000
+training loss: 12112.326171875
+itr: 13010
+training loss: 6299.43994140625
+itr: 13020
+training loss: 16894.677734375
+itr: 13030
+training loss: 7643.1201171875
+itr: 13040
+training loss: 8927.916015625
+itr: 13050
+training loss: 9075.484375
+itr: 13060
+training loss: 12673.814453125
+itr: 13070
+training loss: 9615.181640625
+itr: 13080
+training loss: 5544.09765625
+itr: 13090
+training loss: 14155.064453125
+itr: 13100
+training loss: 7996.052734375
+itr: 13110
+training loss: 13031.548828125
+itr: 13120
+training loss: 6977.3818359375
+itr: 13130
+training loss: 12164.60546875
+itr: 13140
+training loss: 10223.9306640625
+itr: 13150
+training loss: 12521.75
+itr: 13160
+training loss: 7235.8125
+itr: 13170
+training loss: 8227.216796875
+itr: 13180
+training loss: 14739.46875
+itr: 13190
+training loss: 11537.453125
+itr: 13200
+training loss: 9173.630859375
+itr: 13210
+training loss: 9173.5185546875
+itr: 13220
+training loss: 11914.197265625
+itr: 13230
+training loss: 11345.115234375
+itr: 13240
+training loss: 12984.4921875
+itr: 13250
+training loss: 9113.36328125
+itr: 13260
+training loss: 10935.375
+itr: 13270
+training loss: 10143.658203125
+itr: 13280
+training loss: 8671.3623046875
+itr: 13290
+training loss: 9561.62890625
+itr: 13300
+training loss: 8458.9453125
+itr: 13310
+training loss: 6945.07421875
+itr: 13320
+training loss: 8120.4296875
+itr: 13330
+training loss: 11268.95703125
+itr: 13340
+training loss: 7847.0673828125
+itr: 13350
+training loss: 8133.45703125
+itr: 13360
+training loss: 10994.68359375
+itr: 13370
+training loss: 9109.1201171875
+itr: 13380
+training loss: 14967.123046875
+itr: 13390
+training loss: 53609.68359375
+itr: 13400
+training loss: 15766.85546875
+itr: 13410
+training loss: 61970.4453125
+itr: 13420
+training loss: 70925.7265625
+itr: 13430
+training loss: 65969.1484375
+itr: 13440
+training loss: 50372.44921875
+itr: 13450
+training loss: 26518.84375
+itr: 13460
+training loss: 16452.962890625
+itr: 13470
+training loss: 34931.0703125
+itr: 13480
+training loss: 36083.359375
+itr: 13490
+training loss: 36894.984375
+itr: 13500
+training loss: 20553.80078125
+itr: 13510
+training loss: 34065.12890625
+itr: 13520
+training loss: 11262.01171875
+itr: 13530
+training loss: 6302.998046875
+itr: 13540
+training loss: 13581.3876953125
+itr: 13550
+training loss: 16824.341796875
+itr: 13560
+training loss: 11874.83203125
+itr: 13570
+training loss: 9281.14453125
+itr: 13580
+training loss: 9139.33984375
+itr: 13590
+training loss: 17423.43359375
+itr: 13600
+training loss: 11620.05078125
+itr: 13610
+training loss: 9946.96875
+itr: 13620
+training loss: 11456.8720703125
+itr: 13630
+training loss: 12024.412109375
+itr: 13640
+training loss: 13184.068359375
+itr: 13650
+training loss: 10441.626953125
+itr: 13660
+training loss: 7140.8955078125
+itr: 13670
+training loss: 10454.912109375
+itr: 13680
+training loss: 13707.033203125
+itr: 13690
+training loss: 8329.5078125
+itr: 13700
+training loss: 24650.92578125
+itr: 13710
+training loss: 7630.7880859375
+itr: 13720
+training loss: 8453.251953125
+itr: 13730
+training loss: 10043.4462890625
+itr: 13740
+training loss: 8312.306640625
+itr: 13750
+training loss: 6948.14306640625
+itr: 13760
+training loss: 9735.033203125
+itr: 13770
+training loss: 10536.431640625
+itr: 13780
+training loss: 10204.0146484375
+itr: 13790
+training loss: 7687.1572265625
+itr: 13800
+training loss: 7545.51123046875
+itr: 13810
+training loss: 6632.6240234375
+itr: 13820
+training loss: 6890.318359375
+itr: 13830
+training loss: 6308.751953125
+itr: 13840
+training loss: 5773.3154296875
+itr: 13850
+training loss: 8185.828125
+itr: 13860
+training loss: 8744.03515625
+itr: 13870
+training loss: 8816.34375
+itr: 13880
+training loss: 11416.2314453125
+itr: 13890
+training loss: 8870.212890625
+itr: 13900
+training loss: 6708.974609375
+itr: 13910
+training loss: 7565.4833984375
+itr: 13920
+training loss: 5130.5126953125
+itr: 13930
+training loss: 8447.8525390625
+itr: 13940
+training loss: 6358.9267578125
+itr: 13950
+training loss: 14456.2158203125
+itr: 13960
+training loss: 6491.62841796875
+itr: 13970
+training loss: 6193.7548828125
+itr: 13980
+training loss: 7792.7998046875
+itr: 13990
+training loss: 9922.13671875
+itr: 14000
+training loss: 13474.6015625
+test...
+mse per seq: 2595.915767953509
+44.37940893248906
+84.15943162630475
+139.35779756137302
+202.84801021681892
+260.25946165190805
+307.7058376100328
+346.38400261894105
+378.3465237466116
+405.15752867592704
+427.3177653131031
+psnr per frame: 19.624126
+26.651876
+23.83684
+21.592161
+19.9169
+18.77872
+17.993238
+17.424154
+16.993557
+16.65752
+16.396303
+fmae per frame: 1338.9506
+550.1317
+774.38464
+1011.9745
+1230.7634
+1398.7083
+1524.4198
+1621.3302
+1699.053
+1763.1091
+1815.6304
+ssim per frame: 0.6165173
+0.74522877
+0.70447874
+0.66786075
+0.63412124
+0.60712796
+0.586373
+0.5708597
+0.55870175
+0.54907864
+0.5413427
+sharpness per frame: 95.53935
+101.72024
+97.09841
+95.75278
+94.67996
+94.21667
+94.09583
+93.92441
+93.99861
+94.55
+95.356544
+itr: 14010
+training loss: 8809.7724609375
+itr: 14020
+training loss: 9707.896484375
+itr: 14030
+training loss: 9138.751953125
+itr: 14040
+training loss: 10798.4990234375
+itr: 14050
+training loss: 5609.9130859375
+itr: 14060
+training loss: 6683.6484375
+itr: 14070
+training loss: 6588.39404296875
+itr: 14080
+training loss: 11200.181640625
+itr: 14090
+training loss: 13247.75390625
+itr: 14100
+training loss: 7327.45703125
+itr: 14110
+training loss: 11136.1171875
+itr: 14120
+training loss: 7229.5126953125
+itr: 14130
+training loss: 9138.2119140625
+itr: 14140
+training loss: 8113.267578125
+itr: 14150
+training loss: 7527.5439453125
+itr: 14160
+training loss: 5593.48291015625
+itr: 14170
+training loss: 7008.8876953125
+itr: 14180
+training loss: 9600.732421875
+itr: 14190
+training loss: 8605.16796875
+itr: 14200
+training loss: 9150.669921875
+itr: 14210
+training loss: 11082.7314453125
+itr: 14220
+training loss: 8118.8564453125
+itr: 14230
+training loss: 7645.6748046875
+itr: 14240
+training loss: 9154.7001953125
+itr: 14250
+training loss: 10326.5419921875
+itr: 14260
+training loss: 6901.3056640625
+itr: 14270
+training loss: 8629.33203125
+itr: 14280
+training loss: 7793.2294921875
+itr: 14290
+training loss: 10390.1806640625
+itr: 14300
+training loss: 6158.5869140625
+itr: 14310
+training loss: 8718.087890625
+itr: 14320
+training loss: 8794.3603515625
+itr: 14330
+training loss: 6175.75732421875
+itr: 14340
+training loss: 10985.595703125
+itr: 14350
+training loss: 12647.1875
+itr: 14360
+training loss: 8005.5888671875
+itr: 14370
+training loss: 10212.486328125
+itr: 14380
+training loss: 11436.900390625
+itr: 14390
+training loss: 12839.8017578125
+itr: 14400
+training loss: 10772.5712890625
+itr: 14410
+training loss: 8596.138671875
+itr: 14420
+training loss: 10389.71875
+itr: 14430
+training loss: 9311.857421875
+itr: 14440
+training loss: 6803.0029296875
+itr: 14450
+training loss: 9380.81640625
+itr: 14460
+training loss: 13240.76953125
+itr: 14470
+training loss: 8692.08984375
+itr: 14480
+training loss: 7252.8173828125
+itr: 14490
+training loss: 6273.228515625
+itr: 14500
+training loss: 12419.513671875
+itr: 14510
+training loss: 11389.00390625
+itr: 14520
+training loss: 12773.8427734375
+itr: 14530
+training loss: 9051.427734375
+itr: 14540
+training loss: 7189.7822265625
+itr: 14550
+training loss: 15589.5146484375
+itr: 14560
+training loss: 6186.8603515625
+itr: 14570
+training loss: 8525.5380859375
+itr: 14580
+training loss: 9448.435546875
+itr: 14590
+training loss: 6737.39697265625
+itr: 14600
+training loss: 11105.3779296875
+itr: 14610
+training loss: 5621.330078125
+itr: 14620
+training loss: 6511.9267578125
+itr: 14630
+training loss: 7872.1435546875
+itr: 14640
+training loss: 7924.4541015625
+itr: 14650
+training loss: 8372.0400390625
+itr: 14660
+training loss: 7271.44140625
+itr: 14670
+training loss: 7411.48046875
+itr: 14680
+training loss: 8319.044921875
+itr: 14690
+training loss: 8371.494140625
+itr: 14700
+training loss: 9368.6171875
+itr: 14710
+training loss: 8318.8818359375
+itr: 14720
+training loss: 8546.7119140625
+itr: 14730
+training loss: 11457.314453125
+itr: 14740
+training loss: 7095.31640625
+itr: 14750
+training loss: 8789.953125
+itr: 14760
+training loss: 13354.759765625
+itr: 14770
+training loss: 7875.7275390625
+itr: 14780
+training loss: 7073.5166015625
+itr: 14790
+training loss: 9414.31640625
+itr: 14800
+training loss: 9091.8095703125
+itr: 14810
+training loss: 6955.927734375
+itr: 14820
+training loss: 10368.0419921875
+itr: 14830
+training loss: 6234.955078125
+itr: 14840
+training loss: 5921.1845703125
+itr: 14850
+training loss: 9212.505859375
+itr: 14860
+training loss: 7299.1240234375
+itr: 14870
+training loss: 7624.3037109375
+itr: 14880
+training loss: 9316.8671875
+itr: 14890
+training loss: 9059.1796875
+itr: 14900
+training loss: 10129.1796875
+itr: 14910
+training loss: 6605.10986328125
+itr: 14920
+training loss: 16783.21875
+itr: 14930
+training loss: 11184.19921875
+itr: 14940
+training loss: 6372.78466796875
+itr: 14950
+training loss: 12862.9970703125
+itr: 14960
+training loss: 6649.55126953125
+itr: 14970
+training loss: 7243.798828125
+itr: 14980
+training loss: 12400.52734375
+itr: 14990
+training loss: 10975.9990234375
+itr: 15000
+training loss: 11588.44140625
+saved to checkpoints/kth_predrnn_pp
+itr: 15010
+training loss: 9149.78515625
+itr: 15020
+training loss: 5563.23583984375
+itr: 15030
+training loss: 9718.93359375
+itr: 15040
+training loss: 7314.3076171875
+itr: 15050
+training loss: 6306.708984375
+itr: 15060
+training loss: 7047.5283203125
+itr: 15070
+training loss: 6229.1884765625
+itr: 15080
+training loss: 10998.77734375
+itr: 15090
+training loss: 7694.07666015625
+itr: 15100
+training loss: 7780.626953125
+itr: 15110
+training loss: 7353.87646484375
+itr: 15120
+training loss: 8582.8662109375
+itr: 15130
+training loss: 7808.7734375
+itr: 15140
+training loss: 8465.5234375
+itr: 15150
+training loss: 6602.12255859375
+itr: 15160
+training loss: 6047.921875
+itr: 15170
+training loss: 10439.41015625
+itr: 15180
+training loss: 13410.0771484375
+itr: 15190
+training loss: 9730.986328125
+itr: 15200
+training loss: 7429.11474609375
+itr: 15210
+training loss: 11497.080078125
+itr: 15220
+training loss: 6207.884765625
+itr: 15230
+training loss: 7881.697265625
+itr: 15240
+training loss: 10717.46875
+itr: 15250
+training loss: 11018.4453125
+itr: 15260
+training loss: 8542.462890625
+itr: 15270
+training loss: 7740.759765625
+itr: 15280
+training loss: 6723.373046875
+itr: 15290
+training loss: 5762.830078125
+itr: 15300
+training loss: 9106.958984375
+itr: 15310
+training loss: 7190.310546875
+itr: 15320
+training loss: 7835.720703125
+itr: 15330
+training loss: 9758.724609375
+itr: 15340
+training loss: 5241.95166015625
+itr: 15350
+training loss: 7535.85107421875
+itr: 15360
+training loss: 11949.14453125
+itr: 15370
+training loss: 13861.14453125
+itr: 15380
+training loss: 6306.681640625
+itr: 15390
+training loss: 7179.447265625
+itr: 15400
+training loss: 8763.275390625
+itr: 15410
+training loss: 10205.7783203125
+itr: 15420
+training loss: 9175.640625
+itr: 15430
+training loss: 8480.376953125
+itr: 15440
+training loss: 6746.95703125
+itr: 15450
+training loss: 9593.1806640625
+itr: 15460
+training loss: 8641.6796875
+itr: 15470
+training loss: 6488.017578125
+itr: 15480
+training loss: 8515.994140625
+itr: 15490
+training loss: 7817.7666015625
+itr: 15500
+training loss: 7234.607421875
+itr: 15510
+training loss: 9051.548828125
+itr: 15520
+training loss: 8254.6220703125
+itr: 15530
+training loss: 8573.8330078125
+itr: 15540
+training loss: 7202.400390625
+itr: 15550
+training loss: 8605.765625
+itr: 15560
+training loss: 11065.30859375
+itr: 15570
+training loss: 10685.150390625
+itr: 15580
+training loss: 10902.33203125
+itr: 15590
+training loss: 10828.279296875
+itr: 15600
+training loss: 6093.1220703125
+itr: 15610
+training loss: 8076.25390625
+itr: 15620
+training loss: 11375.64453125
+itr: 15630
+training loss: 9050.046875
+itr: 15640
+training loss: 10236.4462890625
+itr: 15650
+training loss: 5395.87548828125
+itr: 15660
+training loss: 7484.0390625
+itr: 15670
+training loss: 7274.9482421875
+itr: 15680
+training loss: 7800.58056640625
+itr: 15690
+training loss: 8240.21875
+itr: 15700
+training loss: 7734.52880859375
+itr: 15710
+training loss: 5586.62841796875
+itr: 15720
+training loss: 7645.98388671875
+itr: 15730
+training loss: 11066.228515625
+itr: 15740
+training loss: 9841.56640625
+itr: 15750
+training loss: 7979.4609375
+itr: 15760
+training loss: 8171.62255859375
+itr: 15770
+training loss: 7201.5654296875
+itr: 15780
+training loss: 7144.12109375
+itr: 15790
+training loss: 7775.8525390625
+itr: 15800
+training loss: 9047.728515625
+itr: 15810
+training loss: 8971.283203125
+itr: 15820
+training loss: 26047.265625
+itr: 15830
+training loss: 49923.0
+itr: 15840
+training loss: 40386.97265625
+itr: 15850
+training loss: 63481.66015625
+itr: 15860
+training loss: 32527.708984375
+itr: 15870
+training loss: 17005.015625
+itr: 15880
+training loss: 23864.7421875
+itr: 15890
+training loss: 37609.5390625
+itr: 15900
+training loss: 35581.796875
+itr: 15910
+training loss: 11951.365234375
+itr: 15920
+training loss: 14089.67578125
+itr: 15930
+training loss: 16119.8310546875
+itr: 15940
+training loss: 9353.1962890625
+itr: 15950
+training loss: 8605.92578125
+itr: 15960
+training loss: 12951.939453125
+itr: 15970
+training loss: 7277.029296875
+itr: 15980
+training loss: 13417.0625
+itr: 15990
+training loss: 16930.3515625
+itr: 16000
+training loss: 9131.88671875
+test...
+mse per seq: 1442.4914103205242
+67.22112383161273
+91.17187556614951
+110.64294542585101
+128.72582557163543
+145.1113169670105
+159.4782673563276
+171.60978496490964
+181.87585260149032
+190.17880405698503
+196.47561397855245
+psnr per frame: 21.465433
+24.630367
+23.224497
+22.362368
+21.711054
+21.19982
+20.80231
+20.493029
+20.24844
+20.060062
+19.9224
+fmae per frame: 1071.4424
+822.79346
+914.9751
+970.2454
+1022.84595
+1072.4314
+1116.5085
+1154.6812
+1187.695
+1215.1025
+1237.1451
+ssim per frame: 0.67548335
+0.75495714
+0.71504766
+0.6922115
+0.6779336
+0.66705024
+0.6588126
+0.65280396
+0.648232
+0.64506036
+0.64272386
+sharpness per frame: 101.60904
+107.94563
+104.95099
+102.86746
+102.06448
+101.32143
+100.47956
+99.74643
+99.136505
+98.8129
+98.765076
+itr: 16010
+training loss: 11721.298828125
+itr: 16020
+training loss: 7818.3896484375
+itr: 16030
+training loss: 8372.306640625
+itr: 16040
+training loss: 12586.435546875
+itr: 16050
+training loss: 6729.611328125
+itr: 16060
+training loss: 6534.1455078125
+itr: 16070
+training loss: 9163.900390625
+itr: 16080
+training loss: 8385.021484375
+itr: 16090
+training loss: 7750.8154296875
+itr: 16100
+training loss: 6176.1298828125
+itr: 16110
+training loss: 9881.61328125
+itr: 16120
+training loss: 11941.79296875
+itr: 16130
+training loss: 8452.6572265625
+itr: 16140
+training loss: 14406.19921875
+itr: 16150
+training loss: 9694.845703125
+itr: 16160
+training loss: 8530.5234375
+itr: 16170
+training loss: 9966.88671875
+itr: 16180
+training loss: 7482.4580078125
+itr: 16190
+training loss: 13564.443359375
+itr: 16200
+training loss: 9373.78515625
+itr: 16210
+training loss: 7118.6005859375
+itr: 16220
+training loss: 9011.8359375
+itr: 16230
+training loss: 11991.740234375
+itr: 16240
+training loss: 10809.318359375
+itr: 16250
+training loss: 61055.4296875
+itr: 16260
+training loss: 20205.884765625
+itr: 16270
+training loss: 20631.1328125
+itr: 16280
+training loss: 18815.123046875
+itr: 16290
+training loss: 8555.52734375
+itr: 16300
+training loss: 9214.55078125
+itr: 16310
+training loss: 11117.615234375
+itr: 16320
+training loss: 7423.220703125
+itr: 16330
+training loss: 9220.7734375
+itr: 16340
+training loss: 5826.09375
+itr: 16350
+training loss: 8376.7939453125
+itr: 16360
+training loss: 7892.431640625
+itr: 16370
+training loss: 7932.943359375
+itr: 16380
+training loss: 8455.0703125
+itr: 16390
+training loss: 10808.8671875
+itr: 16400
+training loss: 8646.533203125
+itr: 16410
+training loss: 11215.677734375
+itr: 16420
+training loss: 8412.798828125
+itr: 16430
+training loss: 11272.6953125
+itr: 16440
+training loss: 7442.845703125
+itr: 16450
+training loss: 11077.693359375
+itr: 16460
+training loss: 5949.03369140625
+itr: 16470
+training loss: 7610.5244140625
+itr: 16480
+training loss: 8141.1591796875
+itr: 16490
+training loss: 7512.40966796875
+itr: 16500
+training loss: 9132.775390625
+itr: 16510
+training loss: 9432.4697265625
+itr: 16520
+training loss: 8962.146484375
+itr: 16530
+training loss: 10278.626953125
+itr: 16540
+training loss: 8721.9326171875
+itr: 16550
+training loss: 10142.896484375
+itr: 16560
+training loss: 7964.845703125
+itr: 16570
+training loss: 6792.3701171875
+itr: 16580
+training loss: 7882.177734375
+itr: 16590
+training loss: 9236.3212890625
+itr: 16600
+training loss: 8853.48828125
+itr: 16610
+training loss: 7375.4130859375
+itr: 16620
+training loss: 11730.291015625
+itr: 16630
+training loss: 9722.111328125
+itr: 16640
+training loss: 10080.177734375
+itr: 16650
+training loss: 7862.7265625
+itr: 16660
+training loss: 4913.173828125
+itr: 16670
+training loss: 9552.1875
+itr: 16680
+training loss: 16830.73828125
+itr: 16690
+training loss: 7289.5458984375
+itr: 16700
+training loss: 6274.638671875
+itr: 16710
+training loss: 7709.8935546875
+itr: 16720
+training loss: 10315.7958984375
+itr: 16730
+training loss: 7826.83251953125
+itr: 16740
+training loss: 8545.228515625
+itr: 16750
+training loss: 9964.8359375
+itr: 16760
+training loss: 7657.8681640625
+itr: 16770
+training loss: 5712.2109375
+itr: 16780
+training loss: 7377.630859375
+itr: 16790
+training loss: 6500.8955078125
+itr: 16800
+training loss: 5509.0244140625
+itr: 16810
+training loss: 9579.400390625
+itr: 16820
+training loss: 12613.2119140625
+itr: 16830
+training loss: 8578.79296875
+itr: 16840
+training loss: 5494.931640625
+itr: 16850
+training loss: 8043.1484375
+itr: 16860
+training loss: 8497.4736328125
+itr: 16870
+training loss: 8259.16015625
+itr: 16880
+training loss: 10923.29296875
+itr: 16890
+training loss: 5845.90673828125
+itr: 16900
+training loss: 6122.9541015625
+itr: 16910
+training loss: 8662.1064453125
+itr: 16920
+training loss: 7177.03564453125
+itr: 16930
+training loss: 7354.73681640625
+itr: 16940
+training loss: 9273.80078125
+itr: 16950
+training loss: 4913.12109375
+itr: 16960
+training loss: 9450.2919921875
+itr: 16970
+training loss: 6484.0751953125
+itr: 16980
+training loss: 10570.6650390625
+itr: 16990
+training loss: 7238.4677734375
+itr: 17000
+training loss: 8961.34375
+itr: 17010
+training loss: 9114.4892578125
+itr: 17020
+training loss: 7042.4765625
+itr: 17030
+training loss: 9656.77734375
+itr: 17040
+training loss: 7999.0869140625
+itr: 17050
+training loss: 16659.2421875
+itr: 17060
+training loss: 8442.337890625
+itr: 17070
+training loss: 8590.251953125
+itr: 17080
+training loss: 5851.919921875
+itr: 17090
+training loss: 6252.28076171875
+itr: 17100
+training loss: 8687.5859375
+itr: 17110
+training loss: 6988.8330078125
+itr: 17120
+training loss: 8355.4794921875
+itr: 17130
+training loss: 8324.5361328125
+itr: 17140
+training loss: 8816.416015625
+itr: 17150
+training loss: 5135.3974609375
+itr: 17160
+training loss: 5544.6796875
+itr: 17170
+training loss: 10202.0986328125
+itr: 17180
+training loss: 8197.908203125
+itr: 17190
+training loss: 10013.8720703125
+itr: 17200
+training loss: 9159.15625
+itr: 17210
+training loss: 7716.89453125
+itr: 17220
+training loss: 5643.01904296875
+itr: 17230
+training loss: 6698.68212890625
+itr: 17240
+training loss: 4869.5087890625
+itr: 17250
+training loss: 7025.0439453125
+itr: 17260
+training loss: 6176.5205078125
+itr: 17270
+training loss: 8640.10546875
+itr: 17280
+training loss: 6005.3203125
+itr: 17290
+training loss: 6332.19384765625
+itr: 17300
+training loss: 8406.166015625
+itr: 17310
+training loss: 7599.26025390625
+itr: 17320
+training loss: 7589.6474609375
+itr: 17330
+training loss: 7672.3046875
+itr: 17340
+training loss: 7677.2646484375
+itr: 17350
+training loss: 6664.9833984375
+itr: 17360
+training loss: 5579.3583984375
+itr: 17370
+training loss: 8262.7568359375
+itr: 17380
+training loss: 6743.646484375
+itr: 17390
+training loss: 6270.166015625
+itr: 17400
+training loss: 6538.4326171875
+itr: 17410
+training loss: 6694.169921875
+itr: 17420
+training loss: 7160.82470703125
+itr: 17430
+training loss: 5874.00390625
+itr: 17440
+training loss: 8546.912109375
+itr: 17450
+training loss: 5160.35302734375
+itr: 17460
+training loss: 6830.31640625
+itr: 17470
+training loss: 8697.47265625
+itr: 17480
+training loss: 7124.017578125
+itr: 17490
+training loss: 11677.9169921875
+itr: 17500
+training loss: 6874.96875
+itr: 17510
+training loss: 8851.181640625
+itr: 17520
+training loss: 6389.61328125
+itr: 17530
+training loss: 9689.236328125
+itr: 17540
+training loss: 5587.03125
+itr: 17550
+training loss: 7755.8955078125
+itr: 17560
+training loss: 6892.1298828125
+itr: 17570
+training loss: 6418.001953125
+itr: 17580
+training loss: 7804.1552734375
+itr: 17590
+training loss: 5732.9443359375
+itr: 17600
+training loss: 4793.181640625
+itr: 17610
+training loss: 6711.171875
+itr: 17620
+training loss: 6824.55029296875
+itr: 17630
+training loss: 7980.537109375
+itr: 17640
+training loss: 5708.43408203125
+itr: 17650
+training loss: 9347.427734375
+itr: 17660
+training loss: 6513.24755859375
+itr: 17670
+training loss: 5672.3310546875
+itr: 17680
+training loss: 9198.134765625
+itr: 17690
+training loss: 8561.470703125
+itr: 17700
+training loss: 9511.7109375
+itr: 17710
+training loss: 12502.6640625
+itr: 17720
+training loss: 7837.48828125
+itr: 17730
+training loss: 6020.0830078125
+itr: 17740
+training loss: 6929.677734375
+itr: 17750
+training loss: 6774.7353515625
+itr: 17760
+training loss: 8704.0927734375
+itr: 17770
+training loss: 7258.060546875
+itr: 17780
+training loss: 8578.76953125
+itr: 17790
+training loss: 8666.3291015625
+itr: 17800
+training loss: 7605.8662109375
+itr: 17810
+training loss: 5083.07861328125
+itr: 17820
+training loss: 7331.53125
+itr: 17830
+training loss: 7315.65380859375
+itr: 17840
+training loss: 12302.2939453125
+itr: 17850
+training loss: 6847.39697265625
+itr: 17860
+training loss: 6435.2958984375
+itr: 17870
+training loss: 6151.6826171875
+itr: 17880
+training loss: 7504.6513671875
+itr: 17890
+training loss: 7241.9462890625
+itr: 17900
+training loss: 4599.484375
+itr: 17910
+training loss: 7299.9091796875
+itr: 17920
+training loss: 8706.375
+itr: 17930
+training loss: 6562.97802734375
+itr: 17940
+training loss: 7764.7998046875
+itr: 17950
+training loss: 7104.0693359375
+itr: 17960
+training loss: 6044.3330078125
+itr: 17970
+training loss: 10874.9560546875
+itr: 17980
+training loss: 5334.74609375
+itr: 17990
+training loss: 10609.361328125
+itr: 18000
+training loss: 7185.19140625
+test...
+mse per seq: 1054.404747085155
+27.41405284802119
+44.352441340022615
+62.726061392587326
+81.49159077387007
+100.09138878867739
+118.09003272132269
+134.6447817423987
+149.54967830597408
+162.58408998459103
+173.46062918768988
+psnr per frame: 23.36765
+28.481123
+26.462376
+24.962393
+23.841578
+22.975977
+22.292227
+21.747057
+21.30544
+20.94713
+20.661192
+fmae per frame: 743.5442
+405.09225
+489.17868
+578.7821
+661.8274
+737.4045
+805.7525
+866.2246
+919.6596
+966.0152
+1005.50494
+ssim per frame: 0.68035084
+0.7674908
+0.7356521
+0.7116954
+0.6929832
+0.67720014
+0.6634787
+0.6520022
+0.6421883
+0.6339325
+0.626885
+sharpness per frame: 96.87071
+100.16924
+97.85079
+97.227776
+96.79762
+96.32797
+96.16865
+96.015076
+96.15377
+96.00258
+95.99365
+itr: 18010
+training loss: 8060.3466796875
+itr: 18020
+training loss: 7586.494140625
+itr: 18030
+training loss: 7713.318359375
+itr: 18040
+training loss: 8015.3330078125
+itr: 18050
+training loss: 8477.2265625
+itr: 18060
+training loss: 9342.0029296875
+itr: 18070
+training loss: 7763.8115234375
+itr: 18080
+training loss: 6221.91796875
+itr: 18090
+training loss: 7218.04736328125
+itr: 18100
+training loss: 7190.34912109375
+itr: 18110
+training loss: 6481.1025390625
+itr: 18120
+training loss: 6642.0537109375
+itr: 18130
+training loss: 9493.251953125
+itr: 18140
+training loss: 6964.87890625
+itr: 18150
+training loss: 8725.380859375
+itr: 18160
+training loss: 6923.76220703125
+itr: 18170
+training loss: 5344.421875
+itr: 18180
+training loss: 6861.8349609375
+itr: 18190
+training loss: 12862.9775390625
+itr: 18200
+training loss: 10549.416015625
+itr: 18210
+training loss: 8313.197265625
+itr: 18220
+training loss: 8626.5419921875
+itr: 18230
+training loss: 7907.767578125
+itr: 18240
+training loss: 9732.3828125
+itr: 18250
+training loss: 13908.2734375
+itr: 18260
+training loss: 6875.5419921875
+itr: 18270
+training loss: 7841.7705078125
+itr: 18280
+training loss: 5824.0498046875
+itr: 18290
+training loss: 5209.869140625
+itr: 18300
+training loss: 9060.912109375
+itr: 18310
+training loss: 8333.361328125
+itr: 18320
+training loss: 5884.091796875
+itr: 18330
+training loss: 9313.587890625
+itr: 18340
+training loss: 7153.8408203125
+itr: 18350
+training loss: 7805.0234375
+itr: 18360
+training loss: 7126.78125
+itr: 18370
+training loss: 7265.0546875
+itr: 18380
+training loss: 6413.767578125
+itr: 18390
+training loss: 10058.908203125
+itr: 18400
+training loss: 7609.046875
+itr: 18410
+training loss: 6230.3056640625
+itr: 18420
+training loss: 12317.1328125
+itr: 18430
+training loss: 10536.62890625
+itr: 18440
+training loss: 8900.5087890625
+itr: 18450
+training loss: 8158.30322265625
+itr: 18460
+training loss: 6416.322265625
+itr: 18470
+training loss: 9354.291015625
